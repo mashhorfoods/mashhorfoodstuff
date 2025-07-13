@@ -1,0 +1,2441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mashhor Foodstuff - Premium Rice Supplier in Oman</title>
+  <meta name="description" content="Mashhor Foodstuff Trading LLC: Oman's trusted supplier of premium Basmati and Non-Basmati rice. Wholesale and retail.">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8b3e0b56e3.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --secondary: #f5f5dc;
+      --accent: #ff9800;
+      --text: #333;
+      --white: #fff;
+      --dark-bg: #121212;
+      --dark-card: #1e1e1e;
+      --dark-text: #f0f0f0;
+      --dark-border: #333;
+    }
+    
+    * {
+      box-sizing: border-box;
+      touch-action: pan-y;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Tajawal', sans-serif;
+      padding-top: 140px;
+      background-color: var(--secondary);
+      line-height: 1.6;
+      color: var(--text);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-size: 16px;
+    }
+    
+    body.dark-mode {
+      background-color: var(--dark-bg);
+      color: var(--dark-text);
+      --primary: #4CAF50;
+      --secondary: #252525;
+    }
+    
+    input, textarea, select {
+      font-size: 16px !important;
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .load-animate {
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
+    }
+    
+    .slide-up {
+      animation: slideUp 0.6s ease forwards;
+    }
+    
+    /* Header - Optimized Structure */
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--primary);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      z-index: 999;
+      padding: 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .header.scrolled {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    .nav-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Navigation Links */
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      padding: 12px 15px;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: 100%;
+    }
+    
+    .header a {
+      font-size: 15px;
+      font-weight: 700;
+      white-space: nowrap;
+      color: var(--white) !important;
+      transition: all 0.3s ease;
+      padding: 8px 15px;
+      border-radius: 4px;
+      text-decoration: none !important;
+    }
+    
+    .header a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    
+    /* Buttons Container */
+    .header-buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .header-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    .header-button:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .header-button i {
+      font-size: 1.1rem;
+    }
+    
+    body.dark-mode .header-button {
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    body.dark-mode .header-button:hover {
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    /* Trust Badges */
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 15px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+    
+    body.dark-mode .trust-badges {
+      background: var(--dark-card);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+    
+    body.dark-mode .trust-badge {
+      color: #4CAF50;
+    }
+    
+    .trust-badge i {
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+    
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px 15px;
+      background: linear-gradient(to bottom, #f8f8f8, var(--white));
+      position: relative;
+      overflow: hidden;
+    }
+    
+    body.dark-mode .hero {
+      background: linear-gradient(to bottom, #1a1a1a, #121212);
+    }
+    
+    .hero::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%232e7d32"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%232e7d32"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%232e7d32"/></svg>');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+    
+    body.dark-mode .hero::before {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%234CAF50"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%234CAF50"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%234CAF50"/></svg>');
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    .hero-logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 15px;
+      transition: all 0.5s ease;
+    }
+    
+    body.dark-mode .hero-logo {
+      filter: brightness(0) invert(1);
+    }
+    
+    .hero h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--primary);
+      animation: fadeIn 1s ease;
+      padding: 0 10px;
+    }
+    
+    body.dark-mode .hero h1 {
+      color: #4CAF50;
+    }
+    
+    .tagline {
+      font-size: 1rem;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+    
+    body.dark-mode .tagline {
+      color: #aaa;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
+    
+    .btn {
+      padding: 12px 24px;
+      background-color: var(--primary);
+      color: var(--white);
+      border-radius: 50px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn:hover {
+      background-color: #256728;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+    }
+    
+    .btn-order {
+      background-color: var(--accent);
+      box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3);
+    }
+    
+    .btn-order:hover {
+      background-color: #e68a00;
+      box-shadow: 0 6px 12px rgba(255, 152, 0, 0.4);
+    }
+    
+    .hero-description {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 25px;
+      padding: 0 15px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    body.dark-mode .hero-description {
+      color: #ccc;
+    }
+    
+    .hero-video {
+      display: flex;
+      justify-content: center;
+      padding: 0 10px;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    
+    .hero-video iframe {
+      width: 100%;
+      max-width: 800px;
+      height: calc(56.25vw);
+      max-height: 450px;
+      margin: 0 auto;
+      display: block;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      loading: lazy;
+      preload: none;
+    }
+    
+    .hero-video iframe:hover {
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    
+    /* Sections */
+    section {
+      padding: 40px 15px;
+      text-align: center;
+      position: relative;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    section h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-weight: 600;
+      position: relative;
+      display: inline-block;
+      padding: 0 15px;
+    }
+    
+    body.dark-mode section h2 {
+      color: #4CAF50;
+    }
+    
+    section h2::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 3px;
+    }
+    
+    section p {
+      font-size: 1rem;
+      color: #444;
+      max-width: 100%;
+      margin: 0 auto 25px;
+      line-height: 1.6;
+      padding: 0 15px;
+    }
+    
+    body.dark-mode section p {
+      color: #ccc;
+    }
+    
+    /* Banner */
+    .banner {
+      margin: 30px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      max-width: 100%;
+    }
+    
+    .banner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: all 0.5s ease;
+      loading: lazy;
+    }
+    
+    .banner:hover img {
+      transform: scale(1.03);
+    }
+    
+    .banner p {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 12px 10px;
+      max-width: 100%;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: 0 0 8px 8px;
+    }
+    
+    body.dark-mode .banner p {
+      background: var(--dark-card);
+      color: #ddd;
+    }
+    
+    /* Enhanced Why Us Section */
+    .enhanced-section {
+      padding: 60px 20px;
+      background-color: white;
+      position: relative;
+    }
+    
+    body.dark-mode .enhanced-section {
+      background-color: var(--dark-card);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-subtitle {
+      font-style: italic;
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    body.dark-mode .section-subtitle {
+      color: #aaa;
+    }
+
+    /* Benefits */
+    .benefits-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto 50px;
+    }
+
+    .benefit-card {
+      background: var(--secondary);
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      border-left: 5px solid var(--accent);
+    }
+    
+    body.dark-mode .benefit-card {
+      background: #252525;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(46, 125, 50, 0.15);
+    }
+    
+    body.dark-mode .benefit-card:hover {
+      box-shadow: 0 15px 30px rgba(76, 175, 80, 0.2);
+    }
+
+    .benefit-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(46, 125, 50, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+    
+    body.dark-mode .benefit-icon {
+      background: rgba(76, 175, 80, 0.1);
+      color: #4CAF50;
+    }
+
+    .benefit-card h3 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    
+    body.dark-mode .benefit-card h3 {
+      color: #4CAF50;
+    }
+
+    .benefit-arrow {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      color: var(--accent);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover .benefit-arrow {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+
+    /* Stats Counter */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+
+    .stat-item {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    body.dark-mode .stat-item {
+      background: #252525;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+    
+    body.dark-mode .stat-number {
+      color: #4CAF50;
+    }
+
+    .stat-label {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    
+    body.dark-mode .stat-label {
+      color: #aaa;
+    }
+
+    /* Who We Serve */
+    .client-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto 40px;
+    }
+
+    .category-card {
+      background: var(--secondary);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    
+    body.dark-mode .category-card {
+      background: #252525;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    body.dark-mode .category-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .category-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    
+    body.dark-mode .category-icon {
+      color: #4CAF50;
+    }
+
+    .category-card h3 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    
+    body.dark-mode .category-card h3 {
+      color: #4CAF50;
+    }
+
+    .category-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .category-card ul li {
+      padding: 8px 0;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    body.dark-mode .category-card ul li {
+      color: #ddd;
+    }
+
+    .category-card ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 1.5rem;
+      line-height: 0;
+    }
+
+    /* Certifications Section */
+    #certifications {
+      background: white;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    body.dark-mode #certifications {
+      background: var(--dark-card);
+    }
+    
+    #certifications::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.ibb.co/0pCx5yRS/Logo.png') center/contain no-repeat;
+      opacity: 0.03;
+      z-index: 0;
+    }
+    
+    body.dark-mode #certifications::before {
+      opacity: 0.05;
+      filter: invert(1);
+    }
+    
+    #certifications .section-header {
+      position: relative;
+      z-index: 1;
+    }
+    
+    #certifications h2 {
+      color: #2e7d32;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    body.dark-mode #certifications h2 {
+      color: #4CAF50;
+    }
+    
+    #certifications .section-subtitle {
+      color: #666;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    body.dark-mode #certifications .section-subtitle {
+      color: #aaa;
+    }
+    
+    .certificates-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 50px auto 0;
+      position: relative;
+      z-index: 1;
+      padding: 0 20px;
+    }
+    
+    .certificate-card {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      background: linear-gradient(to bottom, #f5f5dc, white);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border-top: 5px solid #2e7d32;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    body.dark-mode .certificate-card {
+      background: linear-gradient(to bottom, #2a2a2a, #1e1e1e);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      border-top: 5px solid #4CAF50;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    
+    body.dark-mode .certificate-card:hover {
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+    
+    .certificate-badge {
+      width: 60px;
+      height: 60px;
+      background: #2e7d32;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin: 0 auto 20px;
+    }
+    
+    body.dark-mode .certificate-badge {
+      background: #4CAF50;
+    }
+    
+    .certificate-card h3 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    
+    body.dark-mode .certificate-card h3 {
+      color: #4CAF50;
+    }
+    
+    .certificate-card p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    body.dark-mode .certificate-card p {
+      color: #ccc;
+    }
+    
+    .certificate-status {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      color: #2e7d32;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    
+    body.dark-mode .certificate-status {
+      color: #4CAF50;
+    }
+    
+    /* Products Section - Updated for better display on large screens */
+    #products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 15px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    
+    .product-card {
+      flex: 1 1 calc(25% - 40px);
+      min-width: 280px;
+      max-width: 320px;
+      text-align: center;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background: var(--white);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    body.dark-mode .product-card {
+      background: var(--dark-card);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: contain;
+      margin-bottom: 20px;
+      background: var(--secondary);
+      loading: lazy;
+      border-radius: 8px;
+    }
+    
+    body.dark-mode .product-card img {
+      background: #2a2a2a;
+    }
+    
+    .product-card h3 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-weight: 600;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    body.dark-mode .product-card h3 {
+      color: #4CAF50;
+    }
+    
+    .product-card ul {
+      text-align: left;
+      padding-left: 15px;
+      font-size: 1rem;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 25px;
+      list-style-type: none;
+      flex-grow: 1;
+    }
+    
+    body.dark-mode .product-card ul {
+      color: #ccc;
+    }
+    
+    .product-card ul li {
+      margin-bottom: 6px;
+      position: relative;
+      padding-left: 20px;
+    }
+    
+    .product-card ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 1.3rem;
+      line-height: 0;
+    }
+    
+    .order-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: var(--primary);
+      color: var(--white);
+      font-size: 1rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+      text-decoration: none;
+      margin-top: auto;
+    }
+    
+    body.dark-mode .order-btn {
+      background-color: #4CAF50;
+      box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+    }
+    
+    .order-btn:hover {
+      background-color: #256728;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+    }
+    
+    body.dark-mode .order-btn:hover {
+      background-color: #3d8b40;
+      box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+    }
+    
+    /* Responsive adjustments for products */
+    @media (max-width: 1200px) {
+      .product-card {
+        flex: 1 1 calc(33.333% - 30px);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .product-card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .product-card {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* Testimonials */
+    .testimonials-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      border-top: 4px solid var(--primary);
+    }
+    
+    body.dark-mode .testimonial-card {
+      background: var(--dark-card);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      border-top: 4px solid #4CAF50;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(46, 125, 50, 0.15);
+    }
+    
+    body.dark-mode .testimonial-card:hover {
+      box-shadow: 0 15px 40px rgba(76, 175, 80, 0.2);
+    }
+
+    .testimonial-rating {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-content {
+      position: relative;
+      padding: 0 0 20px 0;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #555;
+      line-height: 1.7;
+    }
+    
+    body.dark-mode .testimonial-content {
+      color: #ccc;
+    }
+
+    .testimonial-content::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background: var(--primary);
+      opacity: 0.3;
+    }
+    
+    body.dark-mode .testimonial-content::after {
+      background: #4CAF50;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      background: rgba(46, 125, 50, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+    
+    body.dark-mode .author-avatar {
+      background: rgba(76, 175, 80, 0.1);
+      color: #4CAF50;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-info strong {
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    
+    body.dark-mode .author-info strong {
+      color: #4CAF50;
+    }
+
+    .author-info span {
+      color: #777;
+      font-size: 0.85rem;
+    }
+    
+    body.dark-mode .author-info span {
+      color: #aaa;
+    }
+
+    /* Contact Us Section */
+    .contact-section {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+      background-size: cover;
+      padding: 80px 0;
+      color: #333;
+    }
+    
+    body.dark-mode .contact-section {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+      background-size: cover;
+    }
+
+    .contact-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 0;
+    }
+    
+    body.dark-mode .contact-overlay {
+      background: rgba(18, 18, 18, 0.9);
+    }
+
+    .contact-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .contact-header h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    
+    body.dark-mode .contact-header h2 {
+      color: #4CAF50;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(46, 125, 50, 0.1);
+    }
+    
+    body.dark-mode .contact-method {
+      border-bottom: 1px solid rgba(76, 175, 80, 0.1);
+    }
+
+    .method-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    
+    body.dark-mode .method-icon {
+      background: #4CAF50;
+    }
+
+    .method-info h3 {
+      color: var(--primary);
+      margin: 0 0 10px 0;
+      font-size: 1.3rem;
+    }
+    
+    body.dark-mode .method-info h3 {
+      color: #4CAF50;
+    }
+
+    .method-info a {
+      color: #333;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    body.dark-mode .method-info a {
+      color: #f0f0f0;
+    }
+
+    .method-info a:hover {
+      color: var(--primary);
+    }
+    
+    body.dark-mode .method-info a:hover {
+      color: #4CAF50;
+    }
+
+    .method-description {
+      display: block;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    body.dark-mode .method-description {
+      color: #aaa;
+    }
+
+    address {
+      font-style: normal;
+      line-height: 1.6;
+    }
+    
+    body.dark-mode address {
+      color: #ccc;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    
+    body.dark-mode .contact-form {
+      background: var(--dark-card);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .contact-form h3 {
+      color: var(--primary);
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    
+    body.dark-mode .contact-form h3 {
+      color: #4CAF50;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      background: #f9f9f9;
+    }
+    
+    body.dark-mode .form-group input,
+    body.dark-mode .form-group textarea {
+      background: #2a2a2a;
+      border-color: #444;
+      color: #f0f0f0;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+    }
+    
+    body.dark-mode .form-group input:focus,
+    body.dark-mode .form-group textarea:focus {
+      border-color: #4CAF50;
+      box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    }
+
+    .submit-btn {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .submit-btn i {
+      margin-right: 8px;
+      font-size: 1.2em;
+    }
+
+    .submit-btn:hover {
+      background: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(18, 140, 126, 0.4);
+    }
+
+    /* Map Styles */
+    .contact-map {
+      margin-top: 50px;
+    }
+
+    .map-wrapper {
+      position: relative;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    body.dark-mode .map-wrapper {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      loading: lazy;
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      z-index: 99;
+    }
+    
+    #backToTop:hover {
+      background: #256728;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    
+    body.dark-mode #backToTop {
+      background: #4CAF50;
+    }
+    
+    body.dark-mode #backToTop:hover {
+      background: #3d8b40;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e5a22;
+      padding: 40px 15px 20px;
+      text-align: center;
+      color: white;
+      font-size: 0.9rem;
+      position: relative;
+    }
+    
+    body.dark-mode footer {
+      background-color: #0d3310;
+    }
+    
+    footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to right, var(--accent), var(--primary));
+    }
+    
+    footer img {
+      height: 80px;
+      margin-bottom: 20px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s ease;
+      loading: lazy;
+    }
+    
+    footer img:hover {
+      transform: scale(1.05);
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    
+    .footer-links a:hover {
+      background: rgba(255,255,255,0.2);
+      text-decoration: none;
+    }
+    
+    .social-links {
+      margin: 20px 0;
+    }
+    
+    .social-links a {
+      color: white;
+      font-size: 1.2rem;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: var(--accent);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    /* Performance Optimizations */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .lazy-load {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .lazy-load.loaded {
+      opacity: 1;
+    }
+    
+    /* Mobile Optimizations */
+    @media (max-width: 1200px) {
+      .contact-grid {
+        gap: 30px;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-form {
+        order: -1;
+      }
+      
+      .map-wrapper {
+        height: 350px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding-top: 140px;
+      }
+      
+      .header {
+        padding: 0;
+      }
+      
+      .nav-row {
+        justify-content: center;
+        gap: 5px;
+        padding: 10px 5px;
+      }
+      
+      .header a {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+      
+      .header-button {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+      }
+      
+      .hero {
+        padding: 40px 15px;
+      }
+      
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .btn {
+        width: 100%;
+        padding: 10px;
+      }
+      
+      .hero-video iframe {
+        height: calc(56.25vw * 0.8);
+        max-height: 250px;
+      }
+      
+      .product-card {
+        flex: 1 1 calc(50% - 20px);
+      }
+      
+      .product-card img {
+        height: 200px;
+      }
+      
+      .contact-section {
+        padding: 60px 0;
+      }
+    
+      .contact-header h2 {
+        font-size: 2rem;
+      }
+    
+      .method-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+      }
+    
+      .map-wrapper {
+        height: 300px;
+      }
+      
+      .testimonials-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .testimonial-card {
+        padding: 25px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 60px 20px;
+      }
+      
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .hero-video iframe {
+        max-height: 450px;
+      }
+      
+      section {
+        padding: 60px 20px;
+      }
+      
+      section h2 {
+        font-size: 2rem;
+      }
+    }
+
+    /* تحسينات للشاشات الكبيرة - Large Screen Optimizations */
+    @media (min-width: 1600px) {
+      /* تحسينات عامة للنصوص */
+      body {
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      
+      /* تحسينات الهيدر */
+      .header a {
+        font-size: 17px;
+        padding: 10px 20px;
+      }
+      
+      .header-button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+      }
+      
+      /* تحسينات القسم البطولي */
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      
+      .tagline {
+        font-size: 1.3rem;
+      }
+      
+      .hero-description {
+        font-size: 1.2rem;
+      }
+      
+      .btn {
+        font-size: 1.1rem;
+        padding: 15px 30px;
+      }
+      
+      /* تحسينات الأقسام */
+      section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+      
+      section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+      
+      /* تحسينات قسم المنتجات */
+      #products {
+        gap: 40px;
+        max-width: 1600px;
+      }
+      
+      .product-card {
+        padding: 30px;
+      }
+      
+      .product-card h3 {
+        font-size: 1.5rem;
+        min-height: 80px;
+      }
+      
+      .product-card ul {
+        font-size: 1.1rem;
+      }
+      
+      .product-card img {
+        height: 320px;
+      }
+      
+      .order-btn {
+        font-size: 1.1rem;
+        padding: 14px 28px;
+      }
+      
+      /* تحسينات قسم الشهادات */
+      .certificate-card h3 {
+        font-size: 1.5rem;
+      }
+      
+      .certificate-card p {
+        font-size: 1.1rem;
+      }
+      
+      /* تحسينات قسم الاتصال */
+      .contact-header h2 {
+        font-size: 3rem;
+      }
+      
+      .method-info h3 {
+        font-size: 1.6rem;
+      }
+      
+      .method-info a {
+        font-size: 1.2rem;
+      }
+      
+      .method-description {
+        font-size: 1.1rem;
+      }
+      
+      /* تحسينات الفوتر */
+      .footer-links a {
+        font-size: 1.1rem;
+      }
+      
+      .social-links a {
+        font-size: 1.4rem;
+      }
+      
+      .copyright {
+        font-size: 1rem;
+      }
+    }
+
+    /* تحسينات إضافية للشاشات الكبيرة جداً */
+    @media (min-width: 2000px) {
+      body {
+        font-size: 20px;
+      }
+      
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+      
+      section h2 {
+        font-size: 3rem;
+      }
+      
+      #products {
+        max-width: 1800px;
+        gap: 50px;
+      }
+      
+      .product-card {
+        padding: 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header - Optimized Structure -->
+  <header class="header">
+    <div class="nav-container">
+      <!-- Navigation Links -->
+      <div class="nav-row">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#clients-say">Testimonials</a>
+        <a href="#contact-us">Contact</a>
+      </div>
+      
+      <!-- Buttons below navigation -->
+      <div class="header-buttons-container">
+        <button id="darkModeToggle" class="header-button">
+          <i class="fas fa-moon"></i> Dark Mode
+        </button>
+        <button id="languageToggle" class="header-button">
+          <i class="fas fa-globe"></i> عربي
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://i.ibb.co/0pCx5yRS/Logo.png" alt="Mashhor Logo" class="hero-logo lazy-load" data-src="https://i.ibb.co/0pCx5yRS/Logo.png" />
+      <h1 class="slide-up">Welcome to Mashhor Foodstuff Trading LLC</h1>
+      <p class="tagline slide-up">"Where The Quality of Rice Feeds Your Life"</p>
+      <div class="hero-buttons slide-up">
+        <a href="#products" class="btn">View Products</a>
+        <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20your%20products." target="_blank" class="btn btn-order">Order Now</a>
+      </div>
+      <p class="hero-description slide-up">"Your trusted source for premium Basmati and Non-Basmati rice in Oman"</p>
+      <div class="hero-video slide-up">
+        <iframe src="https://www.youtube.com/embed/4IA4xy6-5vw" allowfullscreen loading="lazy" preload="none"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <div class="trust-badges load-animate">
+    <div class="trust-badge">
+      <i class="fas fa-check-circle"></i>
+      <span>Quality Guaranteed</span>
+    </div>
+    <div class="trust-badge">
+      <i class="fas fa-truck"></i>
+      <span>Fast Delivery</span>
+    </div>
+    <div class="trust-badge">
+      <i class="fas fa-star"></i>
+      <span>Rated 4.1/5</span>
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <section id="about" class="load-animate">
+    <h2>About Us</h2>
+    <p><strong>Mashhor Foodstuff Trading LLC</strong> is a leading importer and distributor of premium Basmati and Non-Basmati rice in Oman.<br>Established to serve Oman and regional markets.<br>Committed to quality, flavor, and purity.</p>
+  </section>
+
+  <!-- Company Profile -->
+  <section id="company-profile" class="load-animate">
+    <h2>Company Profile</h2>
+    <p>Download our company profile for more info.</p>
+    <a href="https://docs.google.com/presentation/d/10_T6i2drSTwNAXouCuW5IITRQGPRRK2C/edit?usp=drivesdk" target="_blank" class="btn">Download Profile</a>
+  </section>
+
+  <!-- Banner 1 -->
+  <div class="banner load-animate">
+    <img src="https://i.ibb.co/8DhgHy8V/image.png" alt="Premium Rice Selection" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/8DhgHy8V/image.png" />
+    <p>"Specialized in premium quality food products from 100% natural sources"</p>
+  </div>
+
+  <!-- Why Us - Enhanced Section -->
+  <section id="why-us" class="enhanced-section load-animate">
+    <div class="section-header">
+      <h2>Why Choose Mashhor?</h2>
+      <p class="section-subtitle">"Excellence in Every Grain – Trusted Across Oman"</p>
+    </div>
+
+    <div class="benefits-container">
+      <!-- Benefit 1 -->
+      <div class="benefit-card slide-up">
+        <div class="benefit-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>Certified Quality</h3>
+        <p>Direct sourcing from ISO-certified Indian mills with rigorous quality checks at every stage.</p>
+        <div class="benefit-arrow">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      
+      <!-- Benefit 2 -->
+      <div class="benefit-card slide-up">
+        <div class="benefit-icon">
+          <i class="fas fa-truck-fast"></i>
+        </div>
+        <h3>Fast Delivery</h3>
+        <p>Oman-wide delivery within 24-48 hours for bulk orders with real-time tracking.</p>
+        <div class="benefit-arrow">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      
+      <!-- Benefit 3 -->
+      <div class="benefit-card slide-up">
+        <div class="benefit-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <h3>Premium Selection</h3>
+        <p>1121 Basmati, Golden Sella, and specialty rice varieties for every culinary need.</p>
+        <div class="benefit-arrow">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      
+      <!-- Benefit 4 -->
+      <div class="benefit-card slide-up">
+        <div class="benefit-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <h3>Trusted Partnerships</h3>
+        <p>Serving 50+ hotels, supermarkets and wholesalers since 2015 with consistent quality.</p>
+        <div class="benefit-arrow">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Counter -->
+    <div class="stats-grid">
+      <div class="stat-item slide-up">
+        <div class="stat-number" data-count="250">0</div>
+        <div class="stat-label">+ Tons Annual Supply</div>
+      </div>
+      <div class="stat-item slide-up">
+        <div class="stat-number" data-count="100">0</div>
+        <div class="stat-label">+ Happy Clients</div>
+      </div>
+      <div class="stat-item slide-up">
+        <div class="stat-number" data-count="98">0</div>
+        <div class="stat-label">% Satisfaction Rate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Serve - Enhanced Section -->
+  <section id="who-we-serve" class="enhanced-section load-animate">
+    <div class="section-header">
+      <h2>Our Valued Partners</h2>
+      <p class="section-subtitle">"Serving Oman's Food Industry with Premium Rice Solutions"</p>
+    </div>
+
+    <div class="client-categories">
+      <!-- Category 1 -->
+      <div class="category-card slide-up">
+        <div class="category-icon">
+          <i class="fas fa-store"></i>
+        </div>
+        <h3>Retail Chains</h3>
+        <ul>
+          <li>Supermarkets</li>
+          <li>Hypermarkets</li>
+          <li>Specialty Stores</li>
+        </ul>
+      </div>
+      
+      <!-- Category 2 -->
+      <div class="category-card slide-up">
+        <div class="category-icon">
+          <i class="fas fa-utensils"></i>
+        </div>
+        <h3>Food Service</h3>
+        <ul>
+          <li>Hotels & Resorts</li>
+          <li>Restaurants</li>
+          <li>Catering Services</li>
+        </ul>
+      </div>
+      
+      <!-- Category 3 -->
+      <div class="category-card slide-up">
+        <div class="category-icon">
+          <i class="fas fa-boxes"></i>
+        </div>
+        <h3>Wholesale</h3>
+        <ul>
+          <li>Distributors</li>
+          <li>Bulk Buyers</li>
+          <li>Food Processors</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="load-animate">
+    <div class="section-header">
+      <h2>Our Certifications</h2>
+      <p class="section-subtitle">"Quality assurance through internationally recognized standards"</p>
+    </div>
+
+    <div class="certificates-container">
+      <!-- Certificate 1 -->
+      <div class="certificate-card slide-up">
+        <div class="certificate-badge" style="background: #2e7d32;">
+          <i class="fas fa-award"></i>
+        </div>
+        <h3>ISO 22000:2005</h3>
+        <p>Food Safety Management System Certification</p>
+        <div class="certificate-status">
+          <i class="fas fa-check-circle"></i> Certified
+        </div>
+      </div>
+      
+      <!-- Certificate 2 -->
+      <div class="certificate-card slide-up">
+        <div class="certificate-badge" style="background: #ff9800;">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>ISO 9001:2008</h3>
+        <p>Quality Management System Certification</p>
+        <div class="certificate-status" style="color: #ff9800;">
+          <i class="fas fa-check-circle"></i> Certified
+        </div>
+      </div>
+      
+      <!-- Certificate 3 -->
+      <div class="certificate-card slide-up">
+        <div class="certificate-badge" style="background: #2196F3;">
+          <i class="fas fa-industry"></i>
+        </div>
+        <h3>GMP</h3>
+        <p>Good Manufacturing Practice Certification</p>
+        <div class="certificate-status" style="color: #2196F3;">
+          <i class="fas fa-check-circle"></i> Certified
+        </div>
+      </div>
+      
+      <!-- Certificate 4 -->
+      <div class="certificate-card slide-up">
+        <div class="certificate-badge" style="background: #9C27B0;">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>HACCP</h3>
+        <p>Food Safety Certification</p>
+        <div class="certificate-status" style="color: #9C27B0;">
+          <i class="fas fa-check-circle"></i> Certified
+        </div>
+      </div>
+      
+      <!-- Certificate 5 -->
+      <div class="certificate-card slide-up">
+        <div class="certificate-badge" style="background: #607D8B;">
+          <i class="fas fa-star"></i>
+        </div>
+        <h3>Three Star Export House</h3>
+        <p>Certified by the Government of India</p>
+        <div class="certificate-status" style="color: #607D8B;">
+          <i class="fas fa-check-circle"></i> Certified
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner 2 -->
+  <div class="banner load-animate">
+    <img src="https://i.ibb.co/TDd4qS7W/IMG-20250708-215616.jpg" alt="Rice Packaging" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/TDd4qS7W/IMG-20250708-215616.jpg" />
+    <p>"Discover premium rice crafted for every occasion and taste"</p>
+  </div>
+
+  <!-- Products -->
+  <section id="products" class="load-animate">
+    <h2>Our Products</h2>
+    <p>"A Grain for every table"</p>
+
+    <div class="product-card slide-up">
+      <h3>MASHHOR INDIAN XXXL 1121 Basmati Rice (35kg)</h3>
+      <img src="https://i.ibb.co/C3778QCS/mashhor-rice-no-black-bg.png" alt="MASHHOR RICE 35kg" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/C3778QCS/mashhor-rice-no-black-bg.png" />
+      <ul>
+        <li>Premium Long Grain Basmati Rice.</li>
+        <li>Suitable for diabetics.</li>
+        <li>Cholesterol free.</li>
+        <li>Aged rice.</li>
+      </ul>
+      <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MASHHOR%20INDIAN%20XXXL%201121%20Basmati%20Rice%20(35kg)." target="_blank" class="order-btn">Order Online</a>
+    </div>
+
+    <div class="product-card slide-up">
+      <h3>MASHHOR INDIAN XXXL 1121 Basmati Rice (5kg)</h3>
+      <img src="https://i.ibb.co/rGY7PV4G/image.png" alt="MASHHOR RICE 5kg" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/rGY7PV4G/image.png" />
+      <ul>
+        <li>Aged long-grain rice, Aromatic, fluffy texture.</li>
+        <li>Ideal for daily cooking & special occasions.</li>
+      </ul>
+      <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MASHHOR%20INDIAN%20XXXL%201121%20Basmati%20Rice%20(5kg)." target="_blank" class="order-btn">Order Online</a>
+    </div>
+
+    <div class="product-card slide-up">
+      <h3>MAHINAZ CLASSIC XXL Biryani Rice (35kg)</h3>
+      <img src="https://i.ibb.co/8DHDKrZW/mhz35kg.webp" alt="MAHINAZ Biryani Rice" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/8DHDKrZW/mhz35kg.webp" />
+      <ul>
+        <li>Aromatic XXL grains, perfect for traditional biryani dishes.</li>
+        <li>Premium Indian rice for rich flavor and texture.</li>
+      </ul>
+      <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MAHINAZ%20CLASSIC%20XXL%20Biryani%20Rice%20(35kg)." target="_blank" class="order-btn">Order Online</a>
+    </div>
+
+    <div class="product-card slide-up">
+      <h3>INDIAN PRIDE 1121 XXXL Golden Sella Basmati Rice (20kg)</h3>
+      <img src="https://i.ibb.co/JwJNXCwm/1-1.png" alt="INDIAN PRIDE Rice" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/JwJNXCwm/1-1.png" />
+      <ul>
+        <li>Parboiled golden grains, naturally aromatic.</li>
+        <li>Perfect texture for biryani, mandi, and traditional rice dishes.</li>
+      </ul>
+      <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20INDIAN%20PRIDE%201121%20XXXL%20Golden%20Sella%20Basmati%20Rice%20(20kg)." target="_blank" class="order-btn">Order Online</a>
+    </div>
+  </section>
+
+  <!-- Banner 3 -->
+  <div class="banner load-animate">
+    <img src="https://i.ibb.co/tp8y4xP6/IMG-20250708-215553.jpg" alt="Rice Grains Close-up" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/tp8y4xP6/IMG-20250708-215553.jpg" />
+    <p>"Experience excellence in every grain"</p>
+  </div>
+
+  <!-- Testimonials - Updated Section -->
+  <section id="clients-say" class="enhanced-section load-animate" style="background-color: #f9f9f9;">
+    <div class="section-header">
+      <h2>What Our Clients Say</h2>
+      <p class="section-subtitle">"Trusted by businesses across Oman"</p>
+    </div>
+
+    <div class="testimonials-container">
+      <div class="testimonial-card slide-up">
+        <div class="testimonial-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="testimonial-content">
+          <p>"Mashhor delivers quality every time. Their rice is consistent and aromatic, perfect for our restaurant dishes."</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="author-info">
+            <strong>Al Khoudh Restaurant</strong>
+            <span>Muscat, Oman</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card slide-up">
+        <div class="testimonial-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="testimonial-content">
+          <p>"We switched to Mashhor rice last year and never looked back. Their customer service is as excellent as their products."</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <div class="author-info">
+            <strong>Chef Hassan</strong>
+            <span>Head Chef, Muscat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card slide-up">
+        <div class="testimonial-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="testimonial-content">
+          <p>"Great support and fast delivery. We've been partners with Mashhor, and appreciate their reliability."</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <i class="fas fa-store"></i>
+          </div>
+          <div class="author-info">
+            <strong>Barka Supermarket</strong>
+            <span>Barka, Oman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us - Updated Section -->
+  <section id="contact-us" class="contact-section load-animate">
+    <div class="contact-overlay"></div>
+    
+    <div class="contact-content">
+      <div class="contact-header">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">"We're just a message away"</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="contact-method slide-up">
+            <div class="method-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="method-info">
+              <h3>WhatsApp</h3>
+              <a href="https://wa.me/96895224124" target="_blank">+968 95224124</a>
+              <span class="method-description">Direct chat with our team</span>
+            </div>
+          </div>
+          
+          <div class="contact-method slide-up">
+            <div class="method-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="method-info">
+              <h3>Call Us</h3>
+              <a href="tel:+96822716859">+968 22716859</a>
+              <span class="method-description">Sat-Thu: 8AM - 5PM</span>
+            </div>
+          </div>
+          
+          <div class="contact-method slide-up">
+            <div class="method-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="method-info">
+              <h3>Email Us</h3>
+              <a href="mailto:mashhorfoods@gmail.com">mashhorfoods@gmail.com</a>
+              <span class="method-description">Response within 24 hours</span>
+            </div>
+          </div>
+          
+          <div class="contact-method slide-up">
+            <div class="method-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="method-info">
+              <h3>Visit Us</h3>
+              <address>Building No. 162/1, Way No. 4902, Block No. 349, Rusayl Industrial Area, Sultanate of Oman</address>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form slide-up">
+          <h3>Send Us a Message</h3>
+          <form id="messageForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="contact-map slide-up">
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.788164253725!2d58.18250621502397!3d23.58556388424987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf7aa3a4a23b25%3A0xcea37cc4d8831284!2sBuilding%20No.%20162%2F1%2C%20Way%20No.%204902%2C%20Block%20No.%20349%2C%20Rusayl%20Industrial%20Area%2C%20Sultanate%20of%20Oman!5e0!3m2!1sen!2sus!4v1694390480886!5m2!1sen!2sus" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="load-animate">
+    <img src="https://i.ibb.co/0pCx5yRS/Logo.png" alt="Mashhor Logo" class="lazy-load" data-src="https://i.ibb.co/0pCx5yRS/Logo.png" />
+    
+    <div class="footer-links">
+      <a href="#about">About Us</a>
+      <a href="#products">Our Products</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#clients-say">Testimonials</a>
+      <a href="#contact-us">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    
+    <div class="social-links">
+      <a href="https://wa.me/96895224124" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:mashhorfoods@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    
+    <div class="copyright">
+      &copy; <span id="currentYear"></span> Mashhor Foodstuff Trading LLC. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      
+      // Lazy loading for images
+      const lazyImages = [].slice.call(document.querySelectorAll('.lazy-load'));
+      
+      if ('IntersectionObserver' in window) {
+        const lazyImageObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.classList.add('loaded');
+              lazyImageObserver.unobserve(lazyImage);
+            }
+          });
+        }, {
+          rootMargin: '100px 0px',
+          threshold: 0.01
+        });
+
+        lazyImages.forEach(lazyImage => {
+          lazyImageObserver.observe(lazyImage);
+        });
+      } else {
+        lazyImages.forEach(img => {
+          img.src = img.dataset.src || img.src;
+          img.classList.add('loaded');
+        });
+      }
+      
+      // Back to Top Button
+      const backToTop = document.getElementById('backToTop');
+      window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          backToTop.style.display = "flex";
+        } else {
+          backToTop.style.display = "none";
+        }
+      };
+      
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Header Scroll Effect
+      window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Language Toggle
+      document.getElementById('languageToggle').addEventListener('click', function() {
+        const currentLang = this.textContent;
+        const newLang = currentLang === 'عربي' ? 'English' : 'عربي';
+        this.textContent = newLang;
+        alert(`Language will be switched to ${newLang} - This feature is under development`);
+      });
+      
+      // Dark Mode Toggle
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      const darkModeIcon = darkModeToggle.querySelector('i');
+      
+      // Check user preferences
+      const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const savedMode = localStorage.getItem('darkMode');
+      
+      // Apply dark mode if saved or system preference
+      if (savedMode === 'enabled' || (!savedMode && userPrefersDark)) {
+        document.body.classList.add('dark-mode');
+        darkModeIcon.className = 'fas fa-sun';
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        document.querySelector('.hero-logo').style.filter = 'brightness(0) invert(1)';
+      }
+      
+      // Toggle dark mode
+      darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        
+        if (isDarkMode) {
+          darkModeIcon.className = 'fas fa-sun';
+          darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+          localStorage.setItem('darkMode', 'enabled');
+          document.querySelector('.hero-logo').style.filter = 'brightness(0) invert(1)';
+        } else {
+          darkModeIcon.className = 'fas fa-moon';
+          darkModeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+          localStorage.setItem('darkMode', 'disabled');
+          document.querySelector('.hero-logo').style.filter = 'none';
+        }
+      });
+
+      // Counter Animation
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('.stat-item').forEach(item => {
+        observer.observe(item);
+      });
+      
+      function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+        
+        counters.forEach(counter => {
+          const target = +counter.getAttribute('data-count');
+          const increment = target / speed;
+          let current = 0;
+          
+          const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+              counter.textContent = Math.ceil(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target + '+';
+            }
+          };
+          
+          updateCounter();
+        });
+      }
+
+      // Contact Form
+      document.getElementById('messageForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validate inputs
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (!name || !phone || !message) {
+          alert('Please fill in all required fields (Name, Phone, Message)');
+          return;
+        }
+        
+        // Create WhatsApp link
+        const whatsappNumber = '+96895224124';
+        const whatsappMessage = 
+          `New message from Mashhor website:%0A%0A
+          *Name:* ${encodeURIComponent(name)}%0A
+          *Phone:* ${encodeURIComponent(phone)}%0A%0A
+          *Message:*%0A${encodeURIComponent(message)}`;
+        
+        window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
+        this.reset();
+      });
+
+      // Smooth scrolling for internal links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 120,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
