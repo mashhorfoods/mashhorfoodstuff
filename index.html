@@ -1,39 +1,3673 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="auto">
 <head>
   <meta charset="UTF-8">
-  <title>Mashhor Foodstuff Trading LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Mashhor Foodstuff - Premium Rice Supplier in Oman</title>
+  <meta name="description" content="Mashhor Foodstuff Trading LLC: Oman's trusted supplier of premium Basmati and Non-Basmati rice. Wholesale and retail.">
+  <meta name="keywords" content="premium rice Oman, Basmati rice supplier, Non-Basmati rice, wholesale rice Oman, Mashhor Foodstuff">
+  <meta name="author" content="Mashhor Foodstuff Trading LLC">
+  
+  <!-- وسوم SEO محسنة -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="geo.region" content="OM">
+  <meta name="geo.placename" content="Muscat">
+  <meta name="geo.position" content="23.5880;58.3829">
+  <meta name="ICBM" content="23.5880, 58.3829">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@mashhorfoodoman">
+  <meta name="twitter:creator" content="@mashhorfoodoman">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Mashhor Foodstuff - Premium Rice Supplier in Oman">
+  <meta property="og:description" content="Oman's trusted supplier of premium Basmati and Non-Basmati rice. Wholesale and retail. Quality guaranteed with international certifications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mashhorfoods.github.io/mashhor-demo/">
+  <meta property="og:image" content="https://i.ibb.co/G42RrRnH/Logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mashhor Foodstuff Logo">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_OM">
+  <meta property="og:site_name" content="Mashhor Foodstuff">
+  <meta property="og:updated_time" content="2025-01-21T00:00:00+04:00">
+  <meta property="og:see_also" content="https://www.facebook.com/mashhorfoodoman/">
+  <meta property="og:see_also" content="https://www.instagram.com/mashhorfoodoman">
+
+  <!-- وسوم إضافية لتحسين SEO -->
+  <link rel="canonical" href="https://mashhorfoods.github.io/mashhor-demo/">
+  <meta name="theme-color" content="#2e7d32">
+  <link rel="icon" href="https://i.ibb.co/G42RrRnH/Logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="https://i.ibb.co/G42RrRnH/Logo.png">
+
+  <script>
+    // Set initial language before page loads to prevent FOUC (Flash of Unstyled Content)
+    window.initialLang = localStorage.getItem('language') || 
+                       (navigator.language.startsWith('ar') ? 'ar' : 'en');
+    
+    // Apply language settings immediately
+    document.documentElement.dir = window.initialLang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = window.initialLang;
+    
+    // Add anti-FOUC CSS before main CSS loads
+    const antiFoucCSS = document.createElement('style');
+    antiFoucCSS.textContent = `
+      [data-en], [data-ar] { visibility: hidden; }
+      [lang="en"] [data-en],
+      [lang="ar"] [data-ar] { visibility: visible; }
+      [data-en], [data-ar] { transition: visibility 0.3s ease; }
+    `;
+    document.head.appendChild(antiFoucCSS);
+  </script>
+
+  <!-- تحسين طلبات الخطوط -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </noscript>
+  
+  <!-- تحميل FontAwesome مرة واحدة -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Preload للصور المهمة -->
+  <link rel="preload" href="https://i.ibb.co/G42RrRnH/Logo.png" as="image">
+  
   <style>
+      /* تحسينات عامة للتخطيط */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* تحسينات قسم المنتجات */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.product-features {
+  text-align: left;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.product-features li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.product-features li:before {
+  content: "•";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* تحسينات قسم القصة */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  padding-right: 20px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.about-text strong {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.mission-card {
+  background: var(--gray);
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.mission-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.mission-card h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.mission-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.about-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* تحسينات للشاشات المتوسطة */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-text {
+    padding-right: 0;
+    order: 2;
+  }
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+    /* Prevent language mixing during load */
+    [data-en], [data-ar] {
+      visibility: hidden;
+    }
+
+    [lang="en"] [data-en],
+    [lang="ar"] [data-ar] {
+      visibility: visible;
+    }
+
+    /* Smooth transition for language switch */
+    [data-en], [data-ar] {
+      transition: visibility 0.3s ease;
+    }
+
+    /* حل مشكلة الأرقام في اللغة العربية */
+    .rtl-numbers {
+      unicode-bidi: isolate;
+      direction: ltr;
+      display: inline-block;
+    }
+    
+    /* تأكد من أن الأرقام في عناصر الاتصال تظهر بشكل صحيح */
+    .method-link .rtl-numbers,
+    .footer-contact-info .rtl-numbers {
+      unicode-bidi: plaintext;
+    }
+
+    :root {
+      --primary: #2e7d32;
+      --primary-dark: #1e5a22;
+      --primary-light: #4caf50;
+      --secondary: #f5f5dc;
+      --accent: #ff9800;
+      --accent-dark: #e68a00;
+      --text: #333;
+      --text-light: #555;
+      --white: #fff;
+      --gray: #f9f9f9;
+      --border: rgba(0,0,0,0.1);
+      --shadow: 0 4px 15px rgba(0,0,0,0.1);
+      --shadow-hover: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    @keyframes skeleton-loading {
+      0% { background-color: #f0f0f0; }
+      50% { background-color: #e0e0e0; }
+      100% { background-color: #f0f0f0; }
+    }
+    
+    .skeleton {
+      animation: skeleton-loading 1.5s infinite ease-in-out;
+      border-radius: 4px;
+    }
+    
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-      background-color: #fff;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      padding-top: 100px;
+      background-color: var(--secondary);
+      line-height: 1.6;
+      color: var(--text);
+      scroll-behavior: smooth;
     }
+    
+    body[dir="rtl"] {
+      font-family: 'Tajawal', sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.3;
+      margin-bottom: 1.2rem;
+    }
+    
+    body[dir="rtl"] h1, 
+    body[dir="rtl"] h2, 
+    body[dir="rtl"] h3, 
+    body[dir="rtl"] h4, 
+    body[dir="rtl"] h5, 
+    body[dir="rtl"] h6 {
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.4;
+    }
+    
+    input, textarea, select, button {
+      font-size: 16px !important;
+      font-family: inherit;
+    }
+
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: 3px solid var(--accent);
+      outline-offset: 2px;
+    }
+    
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary);
+      color: white;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.3s;
+    }
+    
+    .skip-link:focus {
+      top: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .load-animate {
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
+    }
+    
+    .slide-up {
+      animation: slideUp 0.8s ease forwards;
+    }
+    
+    .progress-container {
+      width: 100%;
+      height: 4px;
+      background: rgba(46, 125, 50, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    
+    .progress-bar {
+      height: 4px;
+      background: linear-gradient(to right, var(--accent), var(--primary));
+      width: 0%;
+      transition: width 0.1s ease;
+    }
+    
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--white);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      z-index: 999;
+      padding: 15px 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .header.scrolled {
+      padding: 10px 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    
     .logo {
+      height: 60px;
+      width: auto;
+      max-width: 200px;
+      object-fit: contain;
+      transition: all 0.3s ease;
+    }
+    
+    .header.scrolled .logo {
+      height: 50px;
+    }
+    
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+      background: transparent;
+      border: none;
+    }
+    
+    .hamburger span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: var(--primary);
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
       max-width: 300px;
-      height: auto;
+      height: 100vh;
+      background: var(--white);
+      padding: 80px 20px 20px;
+      transition: all 0.3s ease;
+      z-index: 998;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.1);
     }
-    h1 {
-      margin-top: 20px;
-      color: #333;
+    
+    body[dir="rtl"] .nav-menu {
+      right: auto;
+      left: -100%;
     }
-    .slogan {
+    
+    .nav-menu.active {
+      right: 0;
+    }
+    
+    body[dir="rtl"] .nav-menu.active {
+      left: 0;
+      right: auto;
+    }
+    
+    .nav-menu a {
+      display: block;
+      color: var(--text);
+      padding: 12px 0;
       font-size: 18px;
-      color: #777;
-      margin-top: -10px;
-      margin-bottom: 30px;
-      font-style: italic;
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+      font-weight: 500;
     }
+    
+    .nav-menu a:hover {
+      background: rgba(46, 125, 50, 0.05);
+      padding-left: 15px;
+      color: var(--primary);
+    }
+    
+    body[dir="rtl"] .nav-menu a:hover {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+    
+    .language-toggle {
+      background: rgba(46, 125, 50, 0.1);
+      color: var(--primary);
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .language-toggle:hover {
+      background: rgba(46, 125, 50, 0.2);
+    }
+    
+    .quick-order {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 99;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 25px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    body[dir="rtl"] .quick-order {
+      left: auto;
+      right: 20px;
+    }
+    
+    .quick-order:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(46, 125, 50, 0.5);
+    }
+    
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 15px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+    
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+    
+    .trust-badge i {
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 100px 15px 80px;
+      background: linear-gradient(to bottom, #f8f8f8, var(--white));
+      position: relative;
+      overflow: hidden;
+      min-height: auto;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: var(--primary);
+      animation: fadeIn 1s ease;
+      line-height: 1.3;
+    }
+    
+    .tagline {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 50px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+    
+    .btn {
+      padding: 15px 30px;
+      background-color: var(--primary);
+      color: var(--white);
+      border-radius: 50px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+      text-decoration: none;
+      min-width: 180px;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+    }
+    
+    .btn-order {
+      background-color: var(--accent);
+      box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3);
+    }
+    
+    .btn-order:hover {
+      background-color: var(--accent-dark);
+      box-shadow: 0 6px 12px rgba(255, 152, 0, 0.4);
+    }
+    
+    .certifications-section {
+      background-color: white;
+      padding: 80px 15px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .certifications-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.ibb.co/G42RrRnH/Logo.png') center/contain no-repeat;
+      opacity: 0.03;
+      z-index: 0;
+    }
+    
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 40px auto 0;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .certification-card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid rgba(46, 125, 50, 0.1);
+    }
+    
+    .certification-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(46, 125, 50, 0.1);
+      border-color: rgba(46, 125, 50, 0.3);
+    }
+    
+    .certification-logo {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .certification-logo {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  padding: 5px;
+}
+
+.certification-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(25%);
+  transition: all 0.3s ease;
+}
+    
+    .certification-card:hover .certification-logo img {
+      filter: grayscale(0%);
+    }
+    
+    .certification-details h3 {
+      color: var(--primary);
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    
+    .certification-details p {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 60px 15px;
+      text-align: center;
+      position: relative;
+      max-width: 100%;
+      overflow-x: hidden;
+      margin-bottom: 40px;
+    }
+    
+    section h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      padding: 0 15px;
+    }
+    
+    section h2::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 3px;
+    }
+    
+    section p {
+      font-size: 1rem;
+      color: #444;
+      max-width: 100%;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+      padding: 0 15px;
+    }
+    
+    .section-subtitle {
+      display: block !important;
+      opacity: 1 !important;
+      font-style: italic;
+      color: #666;
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0.8rem auto 0;
+      white-space: normal;
+    }
+    
+    .banner-slider {
+      position: relative;
+      max-width: 1200px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    
+    .slider {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      flex-shrink: 0;
+      position: relative;
+    }
+    
+    .slider-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+
+.slide:hover img {
+  transform: scale(1.03);
+}
+    
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.7);
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .slider-btn:hover {
+      background: var(--white);
+      transform: translateY(-50%) scale(1.1);
+    }
+    
+    .prev-btn {
+      left: 15px;
+    }
+    
+    .next-btn {
+      right: 15px;
+    }
+    
+    .slider-dots {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+    
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .slider-dot.active {
+      background: var(--white);
+      transform: scale(1.2);
+    }
+    
+    .slider-promo-text {
+      text-align: center;
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--primary);
+      font-weight: 500;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .enhanced-section {
+      padding: 60px 15px;
+      background-color: white;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .benefits-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto 40px;
+    }
+
+    .benefit-card {
+      background: var(--secondary);
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      border-left: 5px solid var(--accept);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(46, 125, 50, 0.15);
+    }
+
+    .benefit-icon {
+      width: 60px;
+      height: 60px;
+      background: rgba(46, 125, 50, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+
+    .benefit-card h3 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .benefit-arrow {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      color: var(--accent);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover .benefit-arrow {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 25px;
+      max-width: 800px;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+
+    .stat-item {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .client-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto 40px;
+    }
+
+    .category-card {
+      background: var(--secondary);
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .category-icon {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .category-card h3 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .category-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .category-card ul li {
+      padding: 8px 0;
+      position: relative;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    body[dir="rtl"] .category-card ul li {
+      text-align: right;
+    }
+
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+      padding: 0 15px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .product-card {
+      text-align: center;
+      padding: 20px 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background: var(--white);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    
+    .product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+    
+    .product-card img.zoomed {
+  transform: scale(1.8);
+  z-index: 100;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+    .product-card h3 {
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    
+    .product-card ul {
+      text-align: left;
+      padding-left: 15px;
+      font-size: 0.9rem;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 15px;
+      list-style-type: none;
+    }
+    
+    body[dir="rtl"] .product-card ul {
+      text-align: right;
+      padding-left: 0;
+      padding-right: 15px;
+    }
+    
+    .product-card ul li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 20px;
+    }
+    
+    body[dir="rtl"] .product-card ul li {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    
+    .product-card ul li::before {
+  content: none;
+}
+    
+    body[dir="rtl"] .product-card ul li::before {
+      left: auto;
+      right: 0;
+    }
+    
+    .product-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+    }
+    
+    body[dir="rtl"] .product-actions {
+      text-align: right;
+    }
+    
+    .quantity-selector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    
+    body[dir="rtl"] .quantity-selector {
+      flex-direction: row-reverse;
+    }
+    
+    .quantity-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .quantity-btn:hover {
+      background: var(--primary-dark);
+    }
+    
+    .quantity-input {
+      width: 50px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    
+    .order-btn {
+      display: inline-block;
+      padding: 12px;
+      background-color: var(--primary);
+      color: var(--white);
+      font-size: 0.9rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .order-btn:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(46, 125, 50, 0.4);
+    }
+    
+    .favorite-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: none;
+      border: none;
+      color: #ccc;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+    
+    .favorite-btn.active {
+      color: var(--accent);
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 1001;
+      overflow-y: auto;
+    }
+    
+    .modal-content {
+      background: white;
+      margin: 50px auto;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 900px;
+      width: 90%;
+      position: relative;
+      animation: slideUp 0.5s ease;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 1.5rem;
+      color: var(--text-light);
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+    
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    
+    .modal-image {
+      min-width: 100%;
+    }
+    
+    .modal-image img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    
+    .modal-info {
+      flex: 1;
+      text-align: left;
+    }
+    
+    body[dir="rtl"] .modal-info {
+      text-align: right;
+    }
+    
+    .modal-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    
+    .modal-info p {
+      margin-bottom: 15px;
+      color: var(--text-light);
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+    
+    .nutrition-info {
+      margin-top: 15px;
+    }
+    
+    .nutrition-info h4 {
+      margin-bottom: 8px;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+    
+    .nutrition-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+    
+    .nutrition-table th, 
+    .nutrition-table td {
+      padding: 6px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    
+    body[dir="rtl"] .nutrition-table th,
+    body[dir="rtl"] .nutrition-table td {
+      text-align: right;
+    }
+    
+    .nutrition-table th {
+      background: rgba(46, 125, 50, 0.1);
+      color: var(--primary);
+    }
+    
+    .testimonials-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      border: 2px solid rgba(46, 125, 50, 0.2);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(46, 125, 50, 0.15);
+      border-color: var(--primary);
+    }
+
+    .testimonial-rating {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-content {
+      position: relative;
+      padding: 0 0 20px 0;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #555;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-content::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background: var(--primary);
+      opacity: 0.3;
+    }
+
+    body[dir="rtl"] .testimonial-content::after {
+      left: auto;
+      right: 0;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      background: rgba(46, 125, 50, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-info strong {
+      color: var(--primary);
+      font-size: 1rem;
+    }
+
+    .author-info span {
+      color: #777;
+      font-size: 0.85rem;
+    }
+    
+    .contact-section {
+      position: relative;
+      background: #f9f9f9;
+      padding: 80px 0;
+    }
+
+    .contact-overlay {
+      display: none;
+    }
+
+    .contact-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .contact-header h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media (min-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .method-icon {
+      width: 40px;
+      height: 40px;
+      color: var(--primary);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .method-info {
+      flex: 1;
+    }
+
+    .method-info h3 {
+      color: var(--primary);
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .method-link {
+      color: var(--text);
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .method-link:hover {
+      color: var(--primary);
+    }
+
+    .method-description {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin: 5px 0 0;
+      line-height: 1.5;
+    }
+
+    address {
+      font-style: normal;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .contact-form h3 {
+      color: var(--primary);
+      margin: 0 0 25px 0;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      background: white;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: var(--text-light);
+      transition: all 0.3s ease;
+      pointer-events: none;
+      background: white;
+      padding: 0 5px;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label {
+      top: -10px;
+      left: 10px;
+      font-size: 0.8rem;
+      color: var(--primary);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+    }
+
+    .submit-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .submit-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .form-success {
+      text-align: center;
+      padding: 15px;
+      background: rgba(46, 125, 50, 0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+      color: var(--primary);
+      display: none;
+    }
+
+    .form-success i {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .premium-about-section {
+      padding: 80px 15px;
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .premium-about-section::before {
+      content: none;
+    }
+    
+    .about-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+    
+    @media (min-width: 992px) {
+      .about-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+    }
+    
+    .about-text {
+      position: relative;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    
+    .flourish-decoration {
+      display: none;
+    }
+    
+    .centered-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .centered-header h3 {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    .centered-header h3::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    .about-paragraph {
+      margin-bottom: 25px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .about-paragraph strong {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+    
+    .about-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 40px;
+      justify-content: center;
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+    
+    .btn-accent {
+      background: var(--accent);
+      box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3);
+    }
+    
+    .btn-accent:hover {
+      background: var(--accent-dark);
+      box-shadow: 0 6px 12px rgba(255, 152, 0, 0.4);
+    }
+    
+    .about-image {
+      position: relative;
+      text-align: center;
+    }
+    
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      transition: transform 0.5s ease;
+    }
+    
+    .about-image:hover img {
+      transform: scale(1.03);
+    }
+    
+    .mission-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-top: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    @media (min-width: 768px) {
+      .mission-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .mission-card {
+      background: transparent;
+      padding: 15px;
+      text-align: center;
+    }
+    
+    .mission-card h3 {
+      font-size: 1.2rem;
+      color: var(--primary-dark);
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .mission-card h3::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+    }
+    
+    .mission-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    footer {
+      background-color: var(--primary-dark);
+      padding: 60px 20px 30px;
+      color: white;
+      font-size: 0.9rem;
+      position: relative;
+    }
+    
+    footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: var(--accent);
+    }
+    
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    @media (min-width: 768px) {
+      .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .footer-logo {
+      text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+      .footer-logo {
+        text-align: left;
+      }
+      body[dir="rtl"] .footer-logo {
+        text-align: right;
+      }
+    }
+    
+    .footer-logo img {
+      height: 80px;
+      width: auto;
+      margin-bottom: 20px;
+      filter: brightness(0) invert(1);
+    }
+    
+    .footer-about p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .footer-links-section h3 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .footer-links-section h3::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      padding: 5px 0;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+      transform: translateX(5px);
+    }
+    
+    body[dir="rtl"] .footer-links a:hover {
+      transform: translateX(-5px);
+    }
+    
+    .footer-contact-info {
+      list-style: none;
+    }
+    
+    .footer-contact-info li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .footer-contact-info i {
+      color: var(--accept);
+      margin-top: 3px;
+    }
+    
+    .footer-contact-info a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .footer-bottom {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+    
+    .social-links {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    .social-links a {
+      color: white;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: var(--accent);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    #backToTop {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      align-items: center;
+      justify-content: center;
+    }
+    
+    body[dir="rtl"] #backToTop {
+      right: auto;
+      left: 20px;
+    }
+    
+    #backToTop:hover {
+      background: var(--primary-dark);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Lazy loading styles */
+    .lazy-load {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .lazy-load.loaded {
+      opacity: 1;
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 80px 15px;
+      }
+      
+      .hero h1 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+      
+      .tagline {
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+      
+      .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+        min-width: 160px;
+      }
+      
+      .quick-order {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+      }
+      
+      .mission-cards {
+        grid-template-columns: 1fr;
+      }
+      
+      .about-cta {
+        flex-direction: column;
+      }
+      
+      .about-text {
+        padding: 20px;
+      }
+      
+      .about-text h3 {
+        font-size: 1.5rem;
+      }
+
+      .slider-container {
+        height: 250px;
+      }
+      
+      .slider-promo-text {
+        font-size: 1rem;
+        padding: 0 15px;
+      }
+
+      .contact-method {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .method-icon {
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (min-width: 576px) {
+      .hero {
+        padding: 90px 15px;
+      }
+      
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .products-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .contact-form {
+        order: -1;
+      }
+      
+      .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+      
+      .hero {
+        padding: 100px 20px;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .tagline {
+        font-size: 1.2rem;
+      }
+      
+      section {
+        padding: 80px 20px;
+        margin-bottom: 60px;
+      }
+      
+      section h2 {
+        font-size: 2rem;
+      }
+      
+      .section-subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .benefit-card h3, .category-card h3 {
+        font-size: 1.2rem;
+      }
+      
+      .product-card h3 {
+        font-size: 1.1rem;
+      }
+      
+      .contact-header h2 {
+        font-size: 2rem;
+      }
+      
+      .modal-body {
+        flex-direction: row;
+      }
+      
+      .modal-image {
+        min-width: 300px;
+      }
+      
+      .modal-info h3 {
+        font-size: 1.5rem;
+      }
+
+      .slider-container {
+        height: 350px;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+      
+      section h2 {
+        font-size: 2.2rem;
+      }
+      
+      .products-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .product-card:nth-child(3),
+      .product-card:nth-child(4) {
+        grid-column: span 2;
+      }
+      
+      .product-card:nth-child(3) img,
+      .product-card:nth-child(4) img {
+        height: 350px;
+      }
+      
+      .contact-section {
+        padding: 100px 0;
+      }
+      
+      .certifications-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+      
+      section h2 {
+        font-size: 2.5rem;
+      }
+      
+      .product-card:nth-child(3) img,
+      .product-card:nth-child(4) img {
+        height: 400px;
+      }
+      
+      .slider-container {
+        height: 450px;
+      }
+    }
+    
+    /* تحسينات للغة العربية */
+body.rtl {
+  text-align: right;
+}
+
+body.rtl .product-card ul,
+body.rtl .modal-info,
+body.rtl .nutrition-table th, 
+body.rtl .nutrition-table td {
+  text-align: right;
+}
+
+body.rtl .form-group label {
+  right: 15px;
+  left: auto;
+}
+
+body.rtl .form-group input:focus + label,
+body.rtl .form-group input:not(:placeholder-shown) + label,
+body.rtl .form-group textarea:focus + label,
+body.rtl .form-group textarea:not(:placeholder-shown) + label {
+  right: 10px;
+  left: auto;
+}
+
+body.rtl .quantity-selector {
+  flex-direction: row-reverse;
+}
+
+body.rtl .favorite-btn {
+  right: auto;
+  left: 15px;
+}
+
+body.rtl .testimonial-content::after {
+  right: 0;
+  left: auto;
+}
+
+body.rtl .method-link .rtl-numbers,
+body.rtl .footer-contact-info .rtl-numbers {
+  unicode-bidi: plaintext;
+  direction: ltr;
+  display: inline-block;
+}
+
+body.rtl .category-card ul li {
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+body.rtl .category-card ul li::before {
+  right: 0;
+  left: auto;
+}
+
+body.rtl .product-actions {
+  text-align: right;
+}
   </style>
+  
+   <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mashhor Foodstuff Trading LLC",
+    "url": "https://mashhorfoods.github.io/mashhor-demo/",
+    "logo": "https://i.ibb.co/G42RrRnH/Logo.png",
+    "description": "Oman's trusted supplier of premium Basmati and Non-Basmati rice. Wholesale and retail.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Building No. 162/1, Way No. 4902, Block No. 349",
+      "addressLocality": "Rusayl Industrial Area",
+      "addressCountry": "OM"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+968-95224124",
+      "contactType": "Customer service",
+      "areaServed": "OM",
+      "availableLanguage": ["en", "ar"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/mashhorfoodoman/",
+      "https://www.instagram.com/mashhorfoodoman"
+    ]
+  }
+  </script>
 </head>
-<body>
+<body id="top">
+  <a href="#main-content" class="skip-link" data-en="Skip to content" data-ar="انتقل إلى المحتوى">Skip to content</a>
+  
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
 
-  <img src="mashhor_logo.png" alt="Mashhor Logo" class="logo">
-  <h1>Welcome to Mashhor Foodstuff Trading LLC</h1>
-  <div class="slogan">Where The Quality of Rice Feeds Your Life</div>
-  <p>Your trusted source for premium Basmati and Non-Basmati rice in Oman.</p>
+  <header class="header">
+    <div class="header-container">
+      <a href="#top" class="logo-link">
+        <img src="https://i.ibb.co/G42RrRnH/Logo.png" alt="Mashhor Logo" class="logo" width="120" height="50" loading="lazy" />
+      </a>
 
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <nav class="nav-menu">
+      <a href="#about" class="nav-link" data-en="About" data-ar="من نحن">About</a>
+      <a href="#products" class="nav-link" data-en="Products" data-ar="منتجاتنا">Products</a>
+      <a href="#why-us" class="nav-link" data-en="Why Us" data-ar="لماذا نحن">Why Us</a>
+      <a href="#certifications" class="nav-link" data-en="Certifications" data-ar="الشهادات">Certifications</a>
+      <a href="#clients-say" class="nav-link" data-en="Testimonials" data-ar="آراء العملاء">Testimonials</a>
+      <a href="#contact-us" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+      <button class="language-toggle" id="languageToggle" aria-label="Toggle language">
+        <i class="fas fa-language"></i> <span class="lang-text">عربي</span>
+      </button>
+    </nav>
+  </header>
+
+  <a href="https://wa.me/96895224124?text=مرحباً، أنا مهتم بمنتجاتكم." target="_blank" class="quick-order" data-en="Quick Order" data-ar="طلب سريع">
+    <i class="fas fa-bolt"></i>
+    <span class="quick-order-text">Quick Order</span>
+  </a>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="slide-up" data-en="Premium Rice Supplier in Oman" data-ar="مورد الأرز الممتاز في عمان">Premium Rice Supplier in Oman</h1>
+        <p class="tagline slide-up" data-en="Source of high-quality Basmati and Non-Basmati rice in Oman" data-ar="مصدر الأرز البسمتي وغير البسمتي عالي الجودة في عمان">Source of high-quality Basmati and Non-Basmati rice in Oman</p>
+        <div class="hero-buttons slide-up">
+          <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20your%20products." target="_blank" class="btn" data-en="Order Now" data-ar="اطلب الآن">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications-section load-animate">
+      <div class="section-header">
+        <h2 data-en="Internationally Recognized Certifications" data-ar="شهادات معتمدة عالمياً">Internationally Recognized Certifications</h2>
+        <p class="section-subtitle" data-en="Our commitment to quality is verified by independent international organizations" data-ar="التزامنا بالجودة مثبت من قبل منظمات دولية مستقلة">Our commitment to quality is verified by independent international organizations</p>
+      </div>
+
+      <div class="certifications-grid">
+        <div class="certification-card slide-up">
+          <div class="certification-logo">
+            <img src="https://i.ibb.co/0ywjyLK6/iso22000.webp" alt="ISO 22000 Certification" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/0ywjyLK6/iso22000.webp" width="120" height="120" />
+          </div>
+          <div class="certification-details">
+            <h3 data-en="ISO 22000:2018" data-ar="الأيزو 22000:2018">ISO 22000:2018</h3>
+            <p data-en="Food Safety Management System" data-ar="نظام إدارة سلامة الغذاء">Food Safety Management System</p>
+          </div>
+        </div>
+        
+        <div class="certification-card slide-up">
+          <div class="certification-logo">
+            <img src="https://i.ibb.co/cKYgdpCB/iso2015.webp" alt="ISO 9001 Certification" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/cKYgdpCB/iso2015.webp" width="120" height="120" />
+          </div>
+          <div class="certification-details">
+            <h3 data-en="ISO 9001:2015" data-ar="الأيزو 9001:2015">ISO 9001:2015</h3>
+            <p data-en="Quality Management System" data-ar="نظام إدارة الجودة">Quality Management System</p>
+          </div>
+        </div>
+        
+        <div class="certification-card slide-up">
+          <div class="certification-logo">
+            <img src="https://i.ibb.co/p6fsX5XN/haccp.webp" alt="HACCP Certification" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/p6fsX5XN/haccp.webp" width="120" height="120" />
+          </div>
+          <div class="certification-details">
+            <h3>HACCP</h3>
+            <p data-en="Hazard Analysis Critical Control Point" data-ar="نظام تحليل المخاطر ونقاط التحكم الحرجة">Hazard Analysis Critical Control Point</p>
+          </div>
+        </div>
+        
+        <div class="certification-card slide-up">
+          <div class="certification-logo">
+            <img src="https://i.ibb.co/yckTC2g8/gmp.webp" alt="GMP Certification" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/yckTC2g8/gmp.webp" width="120" height="120" />
+          </div>
+          <div class="certification-details">
+            <h3>GMP</h3>
+            <p data-en="Good Manufacturing Practice" data-ar="ممارسات التصنيع الجيدة">Good Manufacturing Practice</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-badges load-animate">
+      <div class="trust-badge">
+        <i class="fas fa-check-circle"></i>
+        <span class="trust-text" data-en="Quality Guaranteed" data-ar="جودة مضمونة">Quality Guaranteed</span>
+      </div>
+      <div class="trust-badge">
+        <i class="fas fa-truck"></i>
+        <span class="trust-text" data-en="Fast Delivery" data-ar="توصيل سريع">Fast Delivery</span>
+      </div>
+      <div class="trust-badge">
+        <i class="fas fa-star"></i>
+        <span class="trust-text" data-en="Rated 4.4/5" data-ar="تقييم 4.4/5">Rated 4.4/5</span>
+      </div>
+    </div>
+
+    <section id="products" class="load-animate">
+      <h2 data-en="Our Products" data-ar="منتجاتنا">Our Products</h2>
+      <p data-en='A Grain for every table' data-ar='حبة لكل مائدة'>A Grain for every table</p>
+
+      <div class="products-container">
+        <div class="product-card slide-up" data-category="basmati bulk">
+          <button class="favorite-btn" aria-label="Add to favorites"><i class="far fa-heart"></i></button>
+          <h3 data-en="MASHHOR INDIAN XXXL 1121 Basmati Rice (35kg)" data-ar="أرز مشهور بسمتي اكس اكس اكس ال 1121 هندي (35 كجم)">MASHHOR INDIAN XXXL 1121 Basmati Rice (35kg)</h3>
+    <img src="https://i.ibb.co/4LMQ7wf/mashhor-rice.webp" 
+     alt="MASHHOR RICE 35kg" 
+     loading="lazy" 
+     class="lazy-load enhanced-image" 
+     data-src="https://i.ibb.co/4LMQ7wf/mashhor-rice.webp" 
+     width="300" 
+     height="200" 
+     onerror="this.src='https://via.placeholder.com/300x200/f8f8f8/666666?text=Image+Not+Found'; this.alt='Image failed to load'" />
+     
+          <ul>
+            <li data-en="Premium Long Grain Basmati Rice." data-ar="أرز بسمتي طويل الحبة ممتاز.">Premium Long Grain Basmati Rice.</li>
+            <li data-en="Suitable for diabetics." data-ar="مناسب لمرضى السكري.">Suitable for diabetics.</li>
+            <li data-en="Cholesterol free." data-ar="خالي من الكوليسترول.">Cholesterol free.</li>
+            <li data-en="Aged rice." data-ar="أرز معتق.">Aged rice.</li>
+          </ul>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="order-btn quick-view-btn" data-product="1" data-en="Quick View" data-ar="عرض سريع">Quick View</button>
+            <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MASHHOR%20INDIAN%20XXXL%201121%20Basmati%20Rice%20(35kg)." target="_blank" class="order-btn" data-en="Order via WhatsApp" data-ar="اطلب عبر واتساب">Order via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card slide-up" data-category="basmati retail">
+          <button class="favorite-btn" aria-label="Add to favorites"><i class="far fa-heart"></i></button>
+          <h3 data-en="MASHHOR INDIAN XXXL 1121 Basmati Rice (5kg)" data-ar="أرز مشهور بسمتي اكس اكس اكس ال 1121 هندي (5 كجم)">MASHHOR INDIAN XXXL 1121 Basmati Rice (5kg)</h3>
+          <img src="https://i.ibb.co/rGY7PV4G/image.png" alt="MASHHOR RICE 5kg" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/rGY7PV4G/image.png" width="300" height="200" />
+          <ul>
+            <li data-en="Aged long-grain rice, Aromatic, fluffy texture." data-ar="أرز طويل الحبة معتق، عطري، ذو قوام رقيق.">Aged long-grain rice, Aromatic, fluffy texture.</li>
+            <li data-en="Ideal for daily cooking & special occasions." data-ar="مثالي للطهي اليومي والمناسبات الخاصة.">Ideal for daily cooking & special occasions.</li>
+          </ul>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="order-btn quick-view-btn" data-product="2" data-en="Quick View" data-ar="عرض سريع">Quick View</button>
+            <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MASHHOR%20INDIAN%20XXXL%201121%20Basmati%20Rice%20(5kg)." target="_blank" class="order-btn" data-en="Order via WhatsApp" data-ar="اطلب عبر واتساب">Order via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card slide-up" data-category="non-basmati bulk">
+          <button class="favorite-btn" aria-label="Add to favorites"><i class="far fa-heart"></i></button>
+          <h3 data-en="MAHINAZ CLASSIC XXL Biryani Rice (35kg)" data-ar="أرز مهيناز كلاسيك اكس اكس ال للبرياني (35 كجم)">MAHINAZ CLASSIC XXL Biryani Rice (35kg)</h3>
+          <img src="https://i.ibb.co/8DHDKrZW/mhz35kg.webp" alt="MAHINAZ Biryani Rice" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/8DHDKrZW/mhz35kg.webp" width="300" height="200" />
+          <ul>
+            <li data-en="Aromatic XXL grains, perfect for traditional biryani dishes." data-ar="حبوب XXL عطرية، مثالية لأطباق البرياني التقليدية.">Aromatic XXL grains, perfect for traditional biryani dishes.</li>
+            <li data-en="Premium Indian rice for rich flavor and texture." data-ar="أرز هندي ممتاز لنكهة غنية وقوام مميز.">Premium Indian rice for rich flavor and texture.</li>
+          </ul>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="order-btn quick-view-btn" data-product="3" data-en="Quick View" data-ar="عرض سريع">Quick View</button>
+            <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MAHINAZ%20CLASSIC%20XXL%20Biryani%20Rice%20(35kg)." target="_blank" class="order-btn" data-en="Order via WhatsApp" data-ar="اطلب عبر واتساب">Order via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="product-card slide-up" data-category="non-basmati bulk">
+          <button class="favorite-btn" aria-label="Add to favorites"><i class="far fa-heart"></i></button>
+          <h3 data-en="INDIAN PRIDE 1121 XXXL Golden Sella Basmati Rice (20kg)" data-ar="أرز إنديان برايد اكس اكس اكس ال 1121 سيلا ذهبي بسمتي (20 كجم)">INDIAN PRIDE 1121 XXXL Golden Sella Basmati Rice (20kg)</h3>
+          <img src="https://i.ibb.co/JwJNXCwm/1-1.png" alt="INDIAN PRIDE Rice" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/JwJNXCwm/1-1.png" width="300" height="200" />
+          <ul>
+            <li data-en="Parboiled golden grains, naturally aromatic." data-ar="حبوب ذهبية مسلوقة جزئيًا، عطرية طبيعيًا.">Parboiled golden grains, naturally aromatic.</li>
+            <li data-en="Perfect texture for biryani, mandi, and traditional rice dishes." data-ar="قوام مثالي للبرياني والمندي وأطباق الأرز التقليدية.">Perfect texture for biryani, mandi, and traditional rice dishes.</li>
+          </ul>
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" max="10" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="order-btn quick-view-btn" data-product="4" data-en="Quick View" data-ar="عرض سريع">Quick View</button>
+            <a href="https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20INDIAN%20PRIDE%201121%20XXXL%20Golden%20Sella%20Basmati%20Rice%20(20kg)." target="_blank" class="order-btn" data-en="Order via WhatsApp" data-ar="اطلب عبر واتساب">Order via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="quickViewModal">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalProductImage" src="" alt="" loading="lazy" class="lazy-load" width="300" height="300" />
+          </div>
+          <div class="modal-info">
+            <h3 id="modalProductTitle"></h3>
+            <p id="modalProductDescription"></p>
+            
+            <div class="nutrition-info">
+              <h4 data-en="Nutritional Information" data-ar="المعلومات الغذائية">Nutritional Information</h4>
+              <table class="nutrition-table">
+                <thead>
+                  <tr>
+                    <th data-en="Nutrient" data-ar="المغذيات">Nutrient</th>
+                    <th data-en="Per 100g" data-ar="لكل 100 جرام">Per 100g</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-en="Energy" data-ar="الطاقة">Energy</td>
+                    <td>350 kcal</td>
+                  </tr>
+                  <tr>
+                    <td data-en="Carbohydrates" data-ar="الكربوهيدرات">Carbohydrates</td>
+                    <td>77g</td>
+                  </tr>
+                  <tr>
+                    <td data-en="Protein" data-ar="البروتين">Protein</td>
+                    <td>7g</td>
+                  </tr>
+                  <tr>
+                    <td data-en="Fat" data-ar="الدهون">Fat</td>
+                    <td>0.5g</td>
+                  </tr>
+                  <tr>
+                    <td data-en="Fiber" data-ar="الألياف">Fiber</td>
+                    <td>1g</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="product-actions">
+              <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1" max="10" />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <a href="#" target="_blank" class="order-btn" id="modalOrderBtn" data-en="Order Now" data-ar="اطلب الآن">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="premium-about-section load-animate">
+  <div class="section-header">
+    <h2 data-en="The Mashhor Story" data-ar="قصة مشهور">The Mashhor Story</h2>
+    <p class="section-subtitle" data-en="Cultivating excellence in every grain" data-ar="نزرع التميز في كل حبة">Cultivating excellence in every grain</p>
+  </div>
+
+  <div class="about-container">
+    <div class="about-content">
+      <div class="about-text">
+        <div class="centered-header">
+          <h3 data-en="Premium Rice Specialists" data-ar="متخصصون في الأرز الممتاز">Premium Rice Specialists</h3>
+        </div>
+        
+        <div class="about-paragraph">
+          <p data-en="<strong>Mashhor Foodstuff Trading LLC</strong> is Oman's trusted source for premium Basmati and Non-Basmati rice, serving both wholesale and retail customers with exceptional quality products." 
+             data-ar="<strong>شركة مشهور للأغذية</strong> هي المصدر الموثوق للأرز البسمتي وغير البسمتي الممتاز في عمان، حيث تخدم كل من العملاء بالجملة والتجزئة بمنتجات عالية الجودة.">
+            <strong>Mashhor Foodstuff Trading LLC</strong> is Oman's trusted source for premium Basmati and Non-Basmati rice, serving both wholesale and retail customers with exceptional quality products.
+          </p>
+        </div>
+        
+        <div class="about-paragraph">
+          <p data-en="We meticulously source our rice from <strong>Mahavir Rice Mills</strong>, an ISO-certified producer with decades of rice cultivation expertise, ensuring authentic flavor and perfect grain quality." 
+             data-ar="نحن نختار أرزنا بعناية من <strong>مطاحن مهافير للأرز</strong>، منتج معتمد حسب المواصفة ISO مع عقود من الخبرة في زراعة الأرز، مما يضمن نكهة أصيلة وجودة حبة مثالية.">
+            We meticulously source our rice from <strong>Mahavir Rice Mills</strong>, an ISO-certified producer with decades of rice cultivation expertise, ensuring authentic flavor and perfect grain quality.
+          </p>
+        </div>
+        
+        <div class="about-cta">
+          <a href="https://docs.google.com/presentation/d/10_T6i2drSTwNAXouCuW5IITRQGPRRK2C/edit?usp=drivesdk" target="_blank" class="btn btn-outline" data-en="Download Full Profile" data-ar="تحميل الملف التعريفي الكامل">
+            <i class="fas fa-file-pdf"></i>
+            <span>Download Full Profile</span>
+          </a>
+          <a href="#contact-us" class="btn btn-accent" data-en="Get In Touch" data-ar="تواصل معنا">
+            <i class="fas fa-phone-alt"></i>
+            <span>Get In Touch</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mission-cards">
+      <div class="mission-card">
+        <h3 data-en="Our Mission" data-ar="مهمتنا">Our Mission</h3>
+        <p data-en="To deliver the finest quality rice with uncompromising standards, ensuring every grain meets our promise of excellence." data-ar="تقديم أجود أنواع الأرز بمعايير لا هوادة فيها، مع ضمان أن كل حبة تفي بوعدنا بالتميز.">
+          To deliver the finest quality rice with uncompromising standards, ensuring every grain meets our promise of excellence.
+        </p>
+      </div>
+      
+      <div class="mission-card">
+        <h3 data-en="Our Vision" data-ar="رؤيتنا">Our Vision</h3>
+        <p data-en="To redefine Oman's rice market through superior products, innovative solutions, and unmatched customer experiences." data-ar="إعادة تعريف سوق الأرز العماني من خلال منتجات فائقة وحلول مبتكرة وتجارب عملاء لا مثيل لها.">
+          To redefine Oman's rice market through superior products, innovative solutions, and unmatched customer experiences.
+        </p>
+      </div>
+      
+      <div class="mission-card">
+        <h3 data-en="Our Promise" data-ar="وعدنا">Our Promise</h3>
+        <p data-en="Consistent quality, reliable delivery, and personalized service - every time, without exception." data-ar="جودة ثابتة، توصيل موثوق، وخدمة شخصية - في كل مرة، دون استثناء.">
+          Consistent quality, reliable delivery, and personalized service - every time, without exception.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="banner-slider load-animate">
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="https://i.ibb.co/Kcbf6t1Z/IMG-20250819-152618.webp" alt="Premium Rice Selection" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/Kcbf6t1Z/IMG-20250819-152618.webp" width="1200" height="600" />
+      </div>
+      <div class="slide">
+        <img src="https://i.ibb.co/3mnkdbpd/IMG-20250819-152313.webp" alt="High-Quality Rice Grains" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/3mnkdbpd/IMG-20250819-152313.webp" width="1200" height="600" />
+      </div>
+      <div class="slide">
+        <img src="https://i.ibb.co/7Jfr3C94/image.webp" alt="Mashhor Rice Packaging" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/7Jfr3C94/image.webp" width="1200" height="600" />
+      </div>
+      <div class="slide">
+        <img src="https://i.ibb.co/Q3M9cXBD/delicious-popular-dishes-traditional-oriental-thumbnail-276127.webp" alt="Delicious Rice Dishes" loading="lazy" class="lazy-load" data-src="https://i.ibb.co/Q3M9cXBD/delicious-popular-dishes-traditional-oriental-thumbnail-276127.webp" width="1200" height="600" />
+      </div>
+    </div>
+    <button class="slider-btn prev-btn" aria-label="Previous slide">❮</button>
+    <button class="slider-btn next-btn" aria-label="Next slide">❯</button>
+    <div class="slider-dots"></div>
+  </div>
+  <div class="slider-promo-text">
+    <p data-en="Premium Quality Rice - Perfect for Every Occasion" data-ar="أرز عالي الجودة - مثالي لكل مناسبة">Premium Quality Rice - Perfect for Every Occasion</p>
+  </div>
+</section>
+
+    <section id="why-us" class="enhanced-section load-animate">
+      <div class="section-header">
+        <h2 data-en="Why Choose Mashhor?" data-ar="لماذا تختار مشهور؟">Why Choose Mashhor?</h2>
+        <p class="section-subtitle" data-en="Excellence in Every Grain – Trusted Across Oman" data-ar="التميز في كل حبة – موثوق به في جميع أنحاء عمان">Excellence in Every Grain – Trusted Across Oman</p>
+      </div>
+
+      <div class="benefits-container">
+        <div class="benefit-card slide-up">
+          <div class="benefit-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3 data-en="Certified Quality" data-ar="جودة معتمدة">Certified Quality</h3>
+          <p data-en="Direct sourcing from ISO-certified Indian mills with rigorous quality checks at every stage." data-ar="توريد مباشر من مصانع هندية معتمدة حسب المواصفة ISO مع فحوصات جودة صارمة في كل مرحلة.">Direct sourcing from ISO-certified Indian mills with rigorous quality checks at every stage.</p>
+          <div class="benefit-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="benefit-card slide-up">
+          <div class="benefit-icon">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <h3 data-en="Fast Delivery" data-ar="توصيل سريع">Fast Delivery</h3>
+          <p data-en="Oman-wide delivery within 24-48 hours for bulk orders with real-time tracking." data-ar="توصيل في جميع أنحاء عمان خلال 24-48 ساعة للطلبات الكبيرة مع تتبع في الوقت الحقيقي.">Oman-wide delivery within 24-48 hours for bulk orders with real-time tracking.</p>
+          <div class="benefit-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="benefit-card slide-up">
+          <div class="benefit-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 data-en="Premium Selection" data-ar="اختيار ممتاز">Premium Selection</h3>
+          <p data-en="1121 Basmati, Golden Sella, and specialty rice varieties for every culinary need." data-ar="أرز بسمتي 1121، سيلا ذهبي، وأصناف أرز خاصة لكل احتياجات الطهي.">1121 Basmati, Golden Sella, and specialty rice varieties for every culinary need.</p>
+          <div class="benefit-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        
+        <div class="benefit-card slide-up">
+          <div class="benefit-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 data-en="Trusted Partnerships" data-ar="شراكات موثوقة">Trusted Partnerships</h3>
+          <p data-en="Serving hotels, supermarkets and wholesalers with consistent quality." data-ar="نخدم الفنادق والسوبرماركت وتجار الجملة بجودة ثابتة.">Serving hotels, supermarkets and wholesalers with consistent quality.</p>
+          <div class="benefit-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-item slide-up">
+          <div class="stat-number" data-count="250">0</div>
+          <div class="stat-label" data-en="+ Tons Annual Supply" data-ar="+ طن إمداد سنوي">+ Tons Annual Supply</div>
+        </div>
+        <div class="stat-item slide-up">
+          <div class="stat-number" data-count="100">0</div>
+          <div class="stat-label" data-en="+ Happy Clients" data-ar="+ عميل سعيد">+ Happy Clients</div>
+        </div>
+        <div class="stat-item slide-up">
+          <div class="stat-number" data-count="98">0</div>
+          <div class="stat-label" data-en="% Satisfaction Rate" data-ar="% معدل رضا">% Satisfaction Rate</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who-we-serve" class="enhanced-section load-animate">
+      <div class="section-header">
+        <h2 data-en="Our Valued Partners" data-ar="شركاؤنا الكرام">Our Valued Partners</h2>
+        <p class="section-subtitle" style="white-space: normal;" data-en=' Serving Omans Food Industry with Premium Rice Solutions' data-ar='نخدم صناعة الأغذية في عمان بحلول الأرز الممتازة'> Serving Omans Food Industry with Premium Rice Solutions</p>
+      </div>
+
+      <div class="client-categories">
+        <div class="category-card slide-up">
+          <div class="category-icon">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3 data-en="Retail Chains" data-ar="سلاسل التجزئة">Retail Chains</h3>
+          <ul style="list-style-type: none; padding-left: 0;">
+            <li data-en="Supermarkets" data-ar="السوبرماركت">Supermarkets</li>
+            <li data-en="Hypermarkets" data-ar="هايبرماركت">Hypermarkets</li>
+            <li data-en="Specialty Stores" data-ar="متاجر متخصصة">Specialty Stores</li>
+          </ul>
+        </div>
+        
+        <div class="category-card slide-up">
+          <div class="category-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3 data-en="Food Service" data-ar="خدمات الطعام">Food Service</h3>
+          <ul style="list-style-type: none; padding-left: 0;">
+            <li data-en="Hotels & Resorts" data-ar="الفنادق والمنتجعات">Hotels & Resorts</li>
+            <li data-en="Restaurants" data-ar="المطاعم">Restaurants</li>
+            <li data-en="Catering Services" data-ar="خدمات التموين">Catering Services</li>
+          </ul>
+        </div>
+        
+        <div class="category-card slide-up">
+          <div class="category-icon">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <h3 data-en="Wholesale" data-ar="الجملة">Wholesale</h3>
+          <ul style="list-style-type: none; padding-left: 0;">
+            <li data-en="Distributors" data-ar="الموزعون">Distributors</li>
+            <li data-en="Bulk Buyers" data-ar="المشترون بالجملة">Bulk Buyers</li>
+            <li data-en="Food Processors" data-ar="معالجات الأغذية">Food Processors</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients-say" class="enhanced-section load-animate" style="background-color: #f9f9f9;">
+      <div class="section-header">
+        <h2 data-en="What Our Clients Say" data-ar="ما يقوله عملاؤنا">What Our Clients Say</h2>
+        <p class="section-subtitle" data-en='Trusted by businesses across Oman ' data-ar='موثوق به من قبل الشركات في جميع أنحاء عمان'>Trusted by businesses across Oman</p>
+      </div>
+
+      <div class="testimonials-container">
+        <div class="testimonial-card slide-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-content">
+            <p data-en='"Mashhor delivers quality every time. Their rice is consistent and aromatic, perfect for our restaurant dishes."' data-ar='"مشهور يقدم الجودة في كل مرة. أرزهم متناسق وعطري، مثالي لأطباق مطعمنا."'>"Mashhor delivers quality every time. Their rice is consistent and aromatic, perfect for our restaurant dishes."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="author-info">
+              <strong data-en="Al Khoudh Restaurant" data-ar="مطعم الخوض">Al Khoudh Restaurant</strong>
+              <span data-en="Muscat, Oman" data-ar="مسقط، عمان">Muscat, Oman</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card slide-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="testimonial-content">
+            <p data-en='"We switched to Mashhor rice last year and never looked back. Their customer service is as excellent as their products."' data-ar='"غيرنا إلى أرز مشهور العام الماضي ولم ننظر إلى الوراء. خدمة العملاء لديهم ممتازة مثل منتجاتهم."'>"We switched to Mashhor rice last year and never looked back. Their customer service is as excellent as their products."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="author-info">
+              <strong data-en="Chef Hassan" data-ar="الشيف حسن">Chef Hassan</strong>
+              <span data-en="Head Chef, Muscat" data-ar="رئيس الطهاة، مسقط">Head Chef, Muscat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card slide-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-content">
+            <p data-en='"Great support and fast delivery. We\'ve been partners with Mashhor, and appreciate their reliability."' data-ar='"دعم رائع وتوصيل سريع. نحن شركاء مع مشهور، ونقدر موثوقيتهم."'>"Great support and fast delivery. We've been partners with Mashhor, and appreciate their reliability."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="author-info">
+              <strong data-en="Barka Supermarket" data-ar="سوبرماركت بركاء">Barka Supermarket</strong>
+              <span data-en="Barka, Oman" data-ar="بركاء، عمان">Barka, Oman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-subtitle" style="margin-top: 40px; font-style: italic;">
+        <p data-en='"Join hundreds of satisfied clients who trust Mashhor for their premium rice needs"' data-ar='انضم إلى المئات من العملاء الراضين الذين يثقون بمشهور لتلبية احتياجاتهم من الأرز الممتاز'>"Join hundreds of satisfied clients who trust Mashhor for their premium rice needs"</p>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact-section load-animate">
+      <div class="contact-overlay"></div>
+      
+      <div class="contact-content">
+        <div class="contact-header">
+          <h2 data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</h2>
+          <p class="section-subtitle" data-en='We are here to serve you' data-ar="نحن هنا لخدمتك">We are here to serve you</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-details">
+            <div class="contact-method slide-up">
+              <div class="method-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="method-info">
+                <h3 data-en="WhatsApp" data-ar="واتساب">WhatsApp</h3>
+                <a href="https://wa.me/96895224124" target="_blank" class="method-link">+968 95224124</a>
+                <p class="method-description" data-en="Fast response within minutes" data-ar="رد سريع خلال دقائق">Fast response within minutes</p>
+              </div>
+            </div>
+            
+            <div class="contact-method slide-up">
+              <div class="method-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="method-info">
+                <h3 data-en="Call Us" data-ar="اتصل بنا">Call Us</h3>
+                <a href="tel:+96822716859" class="method-link">+968 22716859</a>
+                <p class="method-description" data-en="Sat-Thu: 8AM - 5PM" data-ar="السبت-الخميس: 8 صباحاً - 5 مساءً">Sat-Thu: 8AM - 5PM</p>
+              </div>
+            </div>
+            
+            <div class="contact-method slide-up">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-info">
+                <h3 data-en="Email Us" data-ar="راسلنا">Email Us</h3>
+                <a href="mailto:mashhorfoods@gmail.com" class="method-link">mashhorfoods@gmail.com</a>
+                <p class="method-description" data-en="Response within 24 hours" data-ar="رد خلال 24 ساعة">Response within 24 hours</p>
+              </div>
+            </div>
+            
+            <div class="contact-method slide-up">
+              <div class="method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="method-info">
+                <h3 data-en="Our Location" data-ar="موقعنا">Our Location</h3>
+                <address data-en="Building No. 162/1, Way No. 4902, Block No. 349<br>Rusayl Industrial Area, Sultanate of Oman" 
+                        data-ar="مبنى رقم 162/1، طريق رقم 4902، قطعة رقم 349<br>المنطقة الصناعية بروي، سلطنة عمان">
+                  Building No. 162/1, Way No. 4902, Block No. 349<br>Rusayl Industrial Area, Sultanate of Oman
+                </address>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form slide-up">
+            <h3 data-en="Send a Message" data-ar="إرسال رسالة">Send a Message</h3>
+            <form id="messageForm">
+              <div class="form-group">
+                <input type="text" id="name" placeholder=" " required />
+                <label for="name" data-en="Your Name" data-ar="اسمك">Your Name</label>
+                <div class="error-message" data-en="Please enter your name" data-ar="الرجاء إدخال اسمك">Please enter your name</div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder=" " />
+                <label for="email" data-en="Your Email" data-ar="بريدك الإلكتروني">Your Email</label>
+                <div class="error-message" data-en="Please enter a valid email" data-ar="الرجاء إدخال بريد إلكتروني صحيح">Please enter a valid email</div>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" placeholder=" " required />
+                <label for="phone" data-en="Phone Number" data-ar="رقم الهاتف">Phone Number</label>
+                <div class="error-message" data-en="Please enter your phone number" data-ar="الرجاء إدخال رقم هاتفك">Please enter your phone number</div>
+              </div>
+              <div class="form-group">
+                <textarea id="message" rows="4" placeholder=" " required></textarea>
+                <label for="message" data-en="Your Message" data-ar="رسالتك">Your Message</label>
+                <div class="error-message" data-en="Please enter your message" data-ar="الرجاء إدخال رسالتك">Please enter your message</div>
+              </div>
+              <button type="submit" class="submit-btn">
+                <i class="fab fa-whatsapp"></i> <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
+              </button>
+            </form>
+            <div class="form-success">
+              <i class="fas fa-check-circle"></i>
+              <p data-en="Thank you! Your message has been sent." data-ar="شكرًا لك! تم إرسال رسالتك.">Thank you! Your message has been sent.</p>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <footer class="load-animate">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="https://i.ibb.co/G42RrRnH/Logo.png" alt="Mashhor Logo" loading="lazy" width="200" height="80" />
+        <div class="social-links">
+          <a href="https://wa.me/96895224124" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/mashhorfoodoman/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/mashhorfoodoman" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:mashhorfoods@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links-section">
+        <h3 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#about" data-en="About Us" data-ar="من نحن">About Us</a></li>
+          <li><a href="#products" data-en="Our Products" data-ar="منتجاتنا">Our Products</a></li>
+          <li><a href="#certifications" data-en="Certifications" data-ar="الشهادات">Certifications</a></li>
+          <li><a href="#clients-say" data-en="Testimonials" data-ar="آراء العملاء">Testimonials</a></li>
+          <li><a href="#contact-us" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links-section">
+        <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
+        <ul class="footer-contact-info">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-en="Building No. 162/1, Way No. 4902, Block No. 349, Rusayl Industrial Area, Sultanate of Oman" 
+                  data-ar="مبنى رقم 162/1، طريق رقم 4902، قطعة رقم 349، المنطقة الصناعية بروي، سلطنة عمان">
+              Building No. 162/1, Way No. 4902, Block No. 349, Rusayl Industrial Area, Sultanate of Oman
+            </span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+96822716859">+968 22716859</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:mashhorfoods@gmail.com">mashhorfoods@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        &copy; <span id="currentYear"></span> <span data-en="Mashhor Foodstuff Trading LLC. All Rights Reserved." data-ar="شركة مشهور للأغذية. جميع الحقوق محفوظة.">Mashhor Foodstuff Trading LLC. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // حفظ اللغة الحالية في متغير عام
+    let currentLang = window.initialLang;
+
+    // تحسين وظيفة تغيير اللغة
+    function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('language', lang);
+  
+  // تطبيق الإتجاه واللغة فوراً
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = lang;
+  
+  // إضافة CSS إضافي للدعم الكامل للعربية
+  if (lang === 'ar') {
+    document.body.classList.add('rtl');
+    document.body.classList.remove('ltr');
+  } else {
+    document.body.classList.add('ltr');
+    document.body.classList.remove('rtl');
+  }
+  
+  // تحديث نص زر تبديل اللغة
+  const langToggle = document.getElementById('languageToggle');
+  if (langToggle) {
+    langToggle.querySelector('.lang-text').textContent = lang === 'ar' ? 'English' : 'عربي';
+  }
+  
+  // تحديث جميع العناصر القابلة للترجمة
+  document.querySelectorAll('[data-en], [data-ar]').forEach(element => {
+    const text = element.getAttribute(`data-${lang}`);
+    if (text) {
+      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+        element.placeholder = text;
+      } else {
+        const hasHTML = /<[a-z][\s\S]*>/i.test(text);
+        element.innerHTML = hasHTML ? text : document.createTextNode(text).textContent;
+      }
+    }
+  });
+
+  // تحديث زر الطلب في المودال إذا كان موجوداً
+  const modalOrderBtn = document.getElementById('modalOrderBtn');
+  if (modalOrderBtn) {
+    modalOrderBtn.textContent = lang === 'ar' ? 'اطلب الآن' : 'Order Now';
+  }
+  
+  // إعادة تنظيم الجداول والعناصر للغة العربية
+  if (lang === 'ar') {
+    document.querySelectorAll('.nutrition-table th, .nutrition-table td').forEach(cell => {
+      cell.style.textAlign = 'right';
+    });
+    document.querySelectorAll('.modal-info').forEach(info => {
+      info.style.textAlign = 'right';
+    });
+  } else {
+    document.querySelectorAll('.nutrition-table th, .nutrition-table td').forEach(cell => {
+      cell.style.textAlign = 'left';
+    });
+    document.querySelectorAll('.modal-info').forEach(info => {
+      info.style.textAlign = 'left';
+    });
+  }
+}
+
+    // دالة لإنشاء رابط واتساب بشكل صحيح
+    function generateWhatsAppLink(productName, quantity) {
+      const message = currentLang === 'ar' ? 
+        `أنا مهتم بـ ${encodeURIComponent(productName)} - الكمية: ${quantity}` : 
+        `I'm interested in ${encodeURIComponent(productName)} - Quantity: ${quantity}`;
+      return `https://wa.me/96895224124?text=${message}`;
+    }
+
+    // تهيئة الصفحة عند تحميل DOM
+    document.addEventListener('DOMContentLoaded', function() {
+      // تعيين اللغة المبدئية
+      setLanguage(currentLang);
+      
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+      
+      window.onscroll = function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('progressBar').style.width = scrolled + '%';
+        
+        const backToTop = document.getElementById('backToTop');
+        if (winScroll > 300) {
+          backToTop.style.display = "flex";
+        } else {
+          backToTop.style.display = "none";
+        }
+      };
+      
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      const body = document.querySelector('body');
+      
+      hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        this.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        
+        if (navMenu.classList.contains('active')) {
+          this.style.opacity = '0';
+          this.style.pointerEvents = 'none';
+        } else {
+          this.style.opacity = '1';
+          this.style.pointerEvents = 'auto';
+        }
+      });
+      
+      body.addEventListener('click', function(e) {
+        if (navMenu.classList.contains('active') && !e.target.closest('.nav-menu')) {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+          hamburger.style.opacity = '1';
+          hamburger.style.pointerEvents = 'auto';
+        }
+      });
+      
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+          hamburger.style.opacity = '1';
+          hamburger.style.pointerEvents = 'auto';
+        });
+      });
+
+      // إضافة حدث لزر تبديل اللغة
+      const langToggle = document.getElementById('languageToggle');
+      if (langToggle) {
+        langToggle.addEventListener('click', function() {
+          const newLang = currentLang === 'ar' ? 'en' : 'ar';
+          setLanguage(newLang);
+        });
+      }
+      
+      const lazyImages = [].slice.call(document.querySelectorAll('.lazy-load'));
+      
+      if ('IntersectionObserver' in window) {
+        const lazyImageObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.classList.add('loaded');
+              lazyImageObserver.unobserve(lazyImage);
+            }
+          });
+        }, {
+          rootMargin: '100px 0px',
+          threshold: 0.01
+        });
+
+        lazyImages.forEach(lazyImage => {
+          lazyImageObserver.observe(lazyImage);
+        });
+      } else {
+        lazyImages.forEach(img => {
+          img.src = img.dataset.src || img.src;
+          img.classList.add('loaded');
+        });
+      }
+      
+      const backToTop = document.getElementById('backToTop');
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+      
+      window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('.stat-item').forEach(item => {
+        observer.observe(item);
+      });
+      
+      function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        
+        counters.forEach(counter => {
+          const target = +counter.getAttribute('data-count');
+          const duration = 2000;
+          const startTime = Date.now();
+          
+          const updateCounter = () => {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const value = Math.floor(progress * target);
+            
+            counter.textContent = value === target ? `${target}+` : value;
+            
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            }
+          };
+          
+          updateCounter();
+        });
+      }
+
+      const messageForm = document.getElementById('messageForm');
+      const formSuccess = document.querySelector('.form-success');
+      
+      messageForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        document.querySelectorAll('.form-group').forEach(group => {
+          group.classList.remove('error');
+        });
+        formSuccess.style.display = 'none';
+        
+        let isValid = true;
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (!name) {
+          document.getElementById('name').parentElement.classList.add('error');
+          isValid = false;
+        }
+        
+        if (!phone) {
+          document.getElementById('phone').parentElement.classList.add('error');
+          isValid = false;
+        }
+        
+        if (!message) {
+          document.getElementById('message').parentElement.classList.add('error');
+          isValid = false;
+        }
+        
+        if (!isValid) {
+          return;
+        }
+        
+        const whatsappMessage = 
+          currentLang === 'ar' ? 
+          `رسالة جديدة من موقع ماشهور:%0A%0A
+          *الاسم:* ${encodeURIComponent(name)}%0A
+          *الهاتف:* ${encodeURIComponent(phone)}%0A%0A
+          *الرسالة:*%0A${encodeURIComponent(message)}` :
+          `New message from Mashhor website:%0A%0A
+          *Name:* ${encodeURIComponent(name)}%0A
+          *Phone:* ${encodeURIComponent(phone)}%0A%0A
+          *Message:*%0A${encodeURIComponent(message)}`;
+        
+        formSuccess.style.display = 'block';
+        this.reset();
+        
+        setTimeout(() => {
+          window.open(`https://wa.me/96895224124?text=${whatsappMessage}`, '_blank');
+        }, 1000);
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const target = document.querySelector(targetId);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: 'smooth'
+            });
+            
+            if (history.pushState) {
+              history.pushState(null, null, targetId);
+            } else {
+              location.hash = targetId;
+            }
+          }
+        });
+      });
+      
+      // تفويض أحداث يضمن عمل الأزرار أينما وُجدت (في البطاقات وفي المودال)
+      document.addEventListener('click', function (e) {
+        const btn = e.target.closest('.quantity-btn');
+        if (!btn) return;
+
+        const input = btn.parentElement.querySelector('.quantity-input');
+        let value = parseInt(input.value) || 1;
+        const min = parseInt(input.min) || 1;
+        const max = parseInt(input.max) || 10;
+
+        if (btn.classList.contains('minus')) value = Math.max(min, value - 1);
+        if (btn.classList.contains('plus'))  value = Math.min(max, value + 1);
+
+        input.value = value;
+        // نطلق حدث input لكي يلتقطه كود تحديث الواتساب في المودال
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      });
+
+      // تنظيف الإدخال اليدوي وضبطه بين min/max
+      document.addEventListener('input', function (e) {
+        const input = e.target.closest('.quantity-input');
+        if (!input) return;
+        let value = parseInt(input.value) || 1;
+        const min = parseInt(input.min) || 1;
+        const max = parseInt(input.max) || 10;
+        input.value = Math.min(max, Math.max(min, value));
+      });
+      
+      document.querySelectorAll('.favorite-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          this.classList.toggle('active');
+          this.innerHTML = this.classList.contains('active') ? 
+            '<i class="fas fa-heart"></i>' : '<i class="far fa-heart"></i>';
+        });
+      });
+      
+      
+      const modal = document.getElementById('quickViewModal');
+      const closeModal = document.querySelector('.close-modal');
+      const quickViewBtns = document.querySelectorAll('.quick-view-btn');
+      
+      const productsData = {
+        1: {
+          title: {
+            en: "MASHHOR INDIAN XXXL 1121 Basmati Rice (35kg)",
+            ar: "أرز مشهور بسمتي اكس اكس اكس ال 1121 هندي (35 كجم)"
+          },
+          description: {
+            en: "Premium Long Grain Basmati Rice. Direct from Indian farms with rigorous quality checks. Suitable for diabetics, cholesterol free, and aged for perfect texture.",
+            ar: "أرز بسمتي طويل الحبة ممتاز. مباشرة من المزارع الهندية مع فحوصات جودة صارمة. مناسب لمرضى السكري، خالي من الكوليسترول، ومعتق لتحقيق القوام المثالي."
+          },
+          image: "https://i.ibb.co/4LMQ7wf/mashhor-rice.webp",
+          link: {
+            en: "https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MASHHOR%20INDIAN%20XXXL%201121%20Basmati%20Rice%20(35kg).",
+            ar: "https://wa.me/96895224124?text=مرحباً، أنا مهتم بمنتج أرز مشهور بسمتي اكس اكس اكس ال 1121 هندي (35 كجم)"
+          }
+        },
+        2: {
+          title: {
+            en: "MASHHOR INDIAN XXXL 1121 Basmati Rice (5kg)",
+            ar: "أرز مشهور بسمتي اكس اكس اكس ال 1121 هندي (5 كجم)"
+          },
+          description: {
+            en: "Aged long-grain rice with aromatic flavor and fluffy texture. Ideal for daily cooking and special occasions. Perfect for traditional Arabic and Indian dishes.",
+            ar: "أرز طويل الحبة معتق بنكهة عطرية وقوام رقيق. مثالي للطهي اليومي والمناسبات الخاصة. مثالي للأطباق العربية والهندية التقليدية."
+          },
+          image: "https://i.ibb.co/rGY7PV4G/image.png",
+          link: {
+            en: "https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MASHHOR%20INDIAN%20XXXL%201121%20Basmati%20Rice%20(5kg).",
+            ar: "https://wa.me/96895224124?text=مرحباً، أنا مهتم بمنتج أرز مشهور بسمتي اكس اكس اكس ال 1121 هندي (5 كجم)"
+          }
+        },
+        3: {
+          title: {
+            en: "MAHINAZ CLASSIC XXL Biryani Rice (35kg)",
+            ar: "أرز مهيناز كلاسيك اكس اكس ال للبرياني (35 كجم)"
+          },
+          description: {
+            en: "Aromatic XXL grains perfect for traditional biryani dishes. Premium Indian rice with rich flavor and perfect texture that stays separate when cooked.",
+            ar: "حبوب XXL عطرية مثالية لأطباق البرياني التقليدية. أرز هندي ممتاز بنكهة غنية وقوام مثالي يبقى منفصلاً عند الطهي."
+          },
+          image: "https://i.ibb.co/8DHDKrZW/mhz35kg.webp",
+          link: {
+            en: "https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20MAHINAZ%20CLASSIC%20XXL%20Biryani%20Rice%20(35kg).",
+            ar: "https://wa.me/96895224124?text=مرحباً، أنا مهتم بمنتج أرز مهيناز كلاسيك اكس اكس ال للبرياني (35 كجم)"
+          }
+        },
+        4: {
+          title: {
+            en: "INDIAN PRIDE 1121 XXXL Golden Sella Basmati Rice (20kg)",
+            ar: "أرز إنديان برايد اكس اكس اكس ال 1121 سيلا ذهبي بسمتي (20 كجم)"
+          },
+          description: {
+            en: "Parboiled golden grains that are naturally aromatic. Perfect texture for biryani, mandi, and traditional rice dishes. Retains nutrients through special processing.",
+            ar: "حبوب ذهبية مسلوقة جزئيًا ذات نكهة عطرية طبيعية. قوام مثالي للبرياني والمندي وأطباق الأرز التقليدية. يحتفظ بالمغذيات من خلال معالجة خاصة."
+          },
+          image: "https://i.ibb.co/JwJNXCwm/1-1.png",
+          link: {
+            en: "https://wa.me/96895224124?text=Hello%2C%20I'm%20interested%20in%20INDIAN%20PRIDE%201121%20XXXL%20Golden%20Sella%20Basmati%20Rice%20(20kg).",
+            ar: "https://wa.me/96895224124?text=مرحباً، أنا مهتم بمنتج أرز إنديان برايد اكس اكس اكس ال 1121 سيلا ذهبي بسمتي (20 كجم)"
+          }
+        }
+      };
+      
+      let currentProductTitle = '';
+
+      function updateModalOrderLink() {
+        const qty = parseInt(document.querySelector('#quickViewModal .quantity-input').value) || 1;
+        const href = generateWhatsAppLink(currentProductTitle, qty);
+        document.getElementById('modalOrderBtn').setAttribute('href', href);
+      }
+
+      quickViewBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const productId = this.getAttribute('data-product');
+    const product = productsData[productId];
+
+    currentProductTitle = product.title[currentLang];
+
+    document.getElementById('modalProductTitle').textContent = currentProductTitle;
+    document.getElementById('modalProductDescription').textContent = product.description[currentLang];
+    
+    // إصلاح: تأكد من تعيين src بشكل صحيح
+    const modalImage = document.getElementById('modalProductImage');
+    modalImage.src = product.image;
+    modalImage.alt = currentProductTitle;
+
+    // إصلاح: إعادة ضبط الصورة إذا فشلت
+    modalImage.onerror = function() {
+      this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjhmOGY4Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzY2NjY2NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+    };
+
+    // إعادة ضبط الكمية
+    const qtyInput = document.querySelector('#quickViewModal .quantity-input');
+    qtyInput.value = 1;
+    updateModalOrderLink();
+
+    document.getElementById('modalOrderBtn').textContent = currentLang === 'ar' ? 'اطلب الآن' : 'Order Now';
+
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+      // أي تغيير للكمية داخل المودال يحدّث رابط الواتساب فورًا
+      document.querySelector('#quickViewModal').addEventListener('click', function(e) {
+        if (e.target.closest('.quantity-btn')) updateModalOrderLink();
+      });
+      document.querySelector('#quickViewModal').addEventListener('input', function(e) {
+        if (e.target.classList.contains('quantity-input')) updateModalOrderLink();
+      });
+      
+      closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      });
+      
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+      
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      // معالجة أزرار الطلب في البطاقات
+      document.querySelectorAll('.product-actions .order-btn:not(.quick-view-btn)').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const productCard = this.closest('.product-card');
+          const productName = productCard.querySelector('h3').textContent;
+          const quantity = productCard.querySelector('.quantity-input').value;
+          const whatsappLink = generateWhatsAppLink(productName, quantity);
+          window.open(whatsappLink, '_blank');
+        });
+      });
+
+      const slider = document.querySelector('.slider');
+      const slides = document.querySelectorAll('.slide');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      const dotsContainer = document.querySelector('.slider-dots');
+      let currentSlide = 0;
+      const slideCount = slides.length;
+      let slideInterval;
+      
+      function createDots() {
+        dotsContainer.innerHTML = '';
+        slides.forEach((_, index) => {
+          const dot = document.createElement('span');
+          dot.classList.add('slider-dot');
+          if (index === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(index));
+          dotsContainer.appendChild(dot);
+        });
+      }
+      
+      function goToSlide(slideIndex) {
+        currentSlide = (slideIndex + slideCount) % slideCount;
+        const transformValue = document.documentElement.dir === 'rtl' ? 
+          `translateX(${currentSlide * 100}%)` : 
+          `translateX(-${currentSlide * 100}%)`;
+        slider.style.transform = transformValue;
+        updateDots();
+        resetInterval();
+      }
+      
+      function updateDots() {
+        const dots = document.querySelectorAll('.slider-dot');
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentSlide);
+        });
+      }
+      
+      function nextSlide() {
+        goToSlide(currentSlide + 1);
+      }
+      
+      function prevSlide() {
+        goToSlide(currentSlide - 1);
+      }
+      
+      function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+      }
+      
+      function initSlider() {
+        createDots();
+        resetInterval();
+        
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        const sliderContainer = document.querySelector('.slider-container');
+        sliderContainer.addEventListener('mouseenter', () => {
+          clearInterval(slideInterval);
+        });
+        
+        sliderContainer.addEventListener('mouseleave', resetInterval);
+        
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        sliderContainer.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+          clearInterval(slideInterval);
+        }, {passive: true});
+        
+        sliderContainer.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          handleSwipe();
+          resetInterval();
+        }, {passive: true});
+        
+        function handleSwipe() {
+          const threshold = 50;
+          if (touchEndX < touchStartX - threshold) {
+            nextSlide();
+          } else if (touchEndX > touchStartX + threshold) {
+            prevSlide();
+          }
+        }
+      }
+      
+      initSlider();
+    });
+    
+    // تحسين تحميل الصور
+document.addEventListener('DOMContentLoaded', function() {
+  // إضافة تأثير تحميل للصور
+  const images = document.querySelectorAll('img');
+  
+  images.forEach(img => {
+    // إضافة CSS للصور أثناء التحميل
+    if (!img.complete) {
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.5s ease';
+    }
+    
+    img.addEventListener('load', function() {
+      this.style.opacity = '1';
+      this.classList.add('loaded');
+    });
+    
+    // معالجة أخطاء تحميل الصور
+    img.addEventListener('error', function() {
+      console.error('Failed to load image:', this.src);
+      if (!this.getAttribute('data-error-handled')) {
+        this.src = 'https://via.placeholder.com/300x200/f8f8f8/666666?text=Image+Not+Found';
+        this.alt = 'Image failed to load';
+        this.setAttribute('data-error-handled', 'true');
+      }
+    });
+  });
+  
+  // معالجة خاصة لصور المنتجات - التكبير عند النقر
+  const productImages = document.querySelectorAll('.product-card img');
+  productImages.forEach(img => {
+    img.addEventListener('click', function() {
+      this.classList.toggle('zoomed');
+    });
+  });
+  
+  // إغلاق الصورة المكبرة عند النقر خارجها
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.product-card img')) {
+      document.querySelectorAll('.product-card img.zoomed').forEach(img => {
+        img.classList.remove('zoomed');
+      });
+    }
+  });
+});
+
+// إضافة تأثير تحميل للصور عند التمرير
+if ('IntersectionObserver' in window) {
+  const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const lazyImage = entry.target;
+        if (lazyImage.dataset.src) {
+          lazyImage.src = lazyImage.dataset.src;
+        }
+        lazyImage.classList.add('loaded');
+        lazyImageObserver.unobserve(lazyImage);
+      }
+    });
+  });
+
+  document.querySelectorAll('.lazy-load').forEach(lazyImage => {
+    lazyImageObserver.observe(lazyImage);
+  });
+}
+  </script>
 </body>
 </html>
